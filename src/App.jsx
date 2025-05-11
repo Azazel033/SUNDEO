@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         <Route
-          path="/admin-dashboard"
+          path="/admin-dashboard/*"
           element={
             <PrivateRoute allowedRole="admin">
               <AdminDashboard />
