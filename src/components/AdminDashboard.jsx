@@ -1,95 +1,57 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import './AdminDashboard.css'; // Asumiré que tienes un archivo CSS para los estilos
 
-function AdminDashboard() {
-  const [userData, setUserData] = useState([]);
-  const [profile, setProfile] = useState(null);
-  const navigate = useNavigate();
+const App = () => {
+  const [username, setUsername] = useState("");
 
   useEffect(() => {
-    fetchData();
-    fetchProfile();
+    // Obtener el valor del 'username' desde el localStorage
+    const storedUsername = localStorage.getItem("username");
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
   }, []);
 
-  const fetchData = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get('https://api-ejemplo.com/users', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      setUserData(response.data);
-    } catch (error) {
-      console.error('Error al obtener datos:', error);
-    }
-  };
-
-  const fetchProfile = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get('https://api-ejemplo.com/profile', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      setProfile(response.data);
-    } catch (error) {
-      console.error('Error al obtener perfil:', error);
-    }
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('role');
-    navigate('/');
+    // Mostrar un popup de confirmación
+    const confirmLogout = window.confirm("¿Estás seguro de que deseas cerrar sesión?");
+    if (confirmLogout) {
+      // Eliminar el 'username' del localStorage
+      localStorage.removeItem("username");
+
+      // Redirigir al usuario a la página principal
+      window.location.href = '/';  // Redirige a la página principal
+    }
   };
 
   return (
-    <div className="dashboard">
-      <header>
-        <h1>Panel de Administración</h1>
-        <button onClick={handleLogout}>Cerrar Sesión</button>
-      </header>
-      
-      <nav>
-        <button onClick={fetchData}>Consultar Datos</button>
-        <button onClick={fetchProfile}>Ver Perfil</button>
+    <div>
+      <nav className="navbar">
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <ul className="nav-links">
+          <li><a href="#cuenta">Cuenta</a></li>
+          <li><a href="#editar">Editar/Agregar Usuarios</a></li>
+          <li><a href="#consultar">Consultar Datos</a></li>
+          <li><a onClick={handleLogout} href="#">Cerrar Sesión</a></li> {/* Cambié href="#" para evitar comportamiento inesperado */}
+        </ul>
       </nav>
 
-      {profile && (
-        <div className="profile-section">
-          <h2>Mi Perfil</h2>
-          <p>Usuario: {profile.username}</p>
-          <p>Rol: {profile.role}</p>
-        </div>
-      )}
-
-      <div className="data-section">
-        <h2>Datos de Usuarios</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Usuario</th>
-              <th>Rol</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {userData.map(user => (
-              <tr key={user.id}>
-                <td>{user.id}</td>
-                <td>{user.username}</td>
-                <td>{user.role}</td>
-                <td>
-                  <button onClick={() => alert('Editar usuario')}>Editar</button>
-                  <button onClick={() => alert('Eliminar usuario')}>Eliminar</button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="content">
+        <h1>Bienvenido a SUENDEO</h1>
+        <h2>{username ? `Hola, ${username}` : "Usuario no encontrado"}</h2>
       </div>
     </div>
   );
-}
+};
 
-export default AdminDashboard;
+// Para manejar la visibilidad del menú en dispositivos pequeños
+const toggleMenu = () => {
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
+};
+
+export default App;

@@ -15,12 +15,30 @@ function Login({ setIsAuthenticated }) {
     e.preventDefault();
     try {
       // Esta URL es de ejemplo y deberá ser reemplazada por la API real
-      const response = await axios.post('https://api-ejemplo.com/auth/login', credentials);
+      const response = await axios.post('http://localhost:5130/api/Auth/login', credentials);
+      
+      // Mostrar en consola la respuesta completa de la API
+      console.log('Respuesta de la API:', response.data);
+      
       const { token } = response.data;
+      
+      // Mostrar el token por consola
+      console.log('Token recibido:', token);
       
       // Decodificar el token para obtener el rol
       const decodedToken = jwtDecode(token);
-      const { role } = decodedToken;
+      
+      // Mostrar el contenido del token decodificado en consola
+      console.log('Token decodificado:', decodedToken);
+      
+      
+      const role = decodedToken['Roll'];  // En backend se usó ClaimTypes.Role
+      const username = decodedToken['Username'];  // En backend se usó ClaimTypes.Name
+      const userId = decodedToken['UserId'];  // En backend usaste el claim "UserId"
+
+      console.log('ROL:', role);  // Muestra el rol
+      console.log('USERNAME:', username);  // Muestra el nombre de usuario
+      console.log('USERID:', userId);  // Muestra el ID del usuario
 
       // Verificar que el rol sea válido
       if (role !== 'admin' && role !== 'user') {
@@ -31,8 +49,9 @@ function Login({ setIsAuthenticated }) {
       // Guardar el token y el rol
       localStorage.setItem('token', token);
       localStorage.setItem('role', role);
+      localStorage.setItem('username', username);
       setIsAuthenticated(true);
-      
+
       // Redirigir según el rol
       if (role === 'admin') {
         navigate('/admin-dashboard');
