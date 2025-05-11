@@ -101,38 +101,6 @@ button:hover {
   background: #357abd;
 }
 
-.dashboard {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.dashboard header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.dashboard nav {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.dashboard nav button {
-  width: auto;
-}
-
-.profile-section,
-.data-section {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Estilos para la tabla de usuarios */
 .users-table-container {
   padding: 20px;
