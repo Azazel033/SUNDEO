@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, useNavigate, Link } from 'react-router-dom';
+import { Routes, Route, useNavigate, Link, Outlet } from 'react-router-dom';
 import './AdminDashboard.css';
 import UsersTable from './admin/UsersTable';
 import AccountInfo from './admin/AccountInfo';
@@ -56,6 +56,7 @@ const AdminDashboard = () => {
           <Route path="/usuarios" element={<UsersTable />} />
           <Route path="/datos" element={<DataView />} />
         </Routes>
+        <Outlet />
       </div>
     </div>
   );

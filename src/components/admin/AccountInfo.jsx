@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function AccountInfo() {
   const [userData, setUserData] = useState(null);
   const [searchParams] = useSearchParams();
   const username = searchParams.get('username');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchUserData();
@@ -22,6 +23,10 @@ function AccountInfo() {
     } catch (error) {
       console.error('Error al obtener datos del usuario:', error);
     }
+  };
+
+  const handleViewSolarPlants = () => {
+    navigate(`/admin-dashboard/plantas/${userData.userId}`);
   };
 
   if (!userData) {
@@ -48,9 +53,12 @@ function AccountInfo() {
           <label>Fecha de Registro:</label>
           <p>{new Date(userData.createdAt).toLocaleDateString()}</p>
         </div>
+        {userData.role === 'user' && (
+          <div className="info-group">
+            <button onClick={handleViewSolarPlants}>Info Plantas Solares</button>
+          </div>
+        )}
       </div>
     </div>
   );
 }
-
-export default AccountInfo;
