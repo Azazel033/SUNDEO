@@ -12,7 +12,7 @@ function UsersTable() {
     password: '',
     email: '',
     role: 'user'
-  });
+  });  
   const [error, setError] = useState('');
 
   useEffect(() => {
