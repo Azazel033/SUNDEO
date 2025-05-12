@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './UsersTable.css';
 
 function UsersTable() {
+  const navigate = useNavigate();
   const [users, setUsers] = useState([]);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
   const [filterText, setFilterText] = useState('');
@@ -78,6 +80,10 @@ function UsersTable() {
         alert('Error al eliminar el usuario');
       }
     }
+  };
+
+  const handleInspectUser = (username) => {
+    navigate(`/admin-dashboard/cuenta?username=${username}`);
   };
 
   const requestSort = (key) => {
@@ -203,6 +209,7 @@ function UsersTable() {
                 <td>{new Date(user.createdAt).toLocaleDateString()}</td>
                 <td>{user.role}</td>
                 <td>
+                  <button onClick={() => handleInspectUser(user.username)}>Inspeccionar</button>
                   <button onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
                 </td>
               </tr>

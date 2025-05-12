@@ -1,18 +1,21 @@
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 
 function AccountInfo() {
   const [userData, setUserData] = useState(null);
+  const [searchParams] = useSearchParams();
+  const username = searchParams.get('username');
 
   useEffect(() => {
     fetchUserData();
-  }, []);
+  }, [username]);
 
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('token');
-      const username = localStorage.getItem('username');
-      const response = await axios.get(`http://localhost:5130/api/Users/username/${username}`, {
+      const userToFetch = username || localStorage.getItem('username');
+      const response = await axios.get(`http://localhost:5130/api/Users/username/${userToFetch}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUserData(response.data);
