@@ -19,6 +19,7 @@ function AccountInfo() {
       const response = await axios.get(`http://localhost:5130/api/Users/username/${userToFetch}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
+      console.log('User data:', response.data); // Para depuración
       setUserData(response.data);
     } catch (error) {
       console.error('Error al obtener datos del usuario:', error);
@@ -26,7 +27,9 @@ function AccountInfo() {
   };
 
   const handleViewSolarPlants = () => {
-    navigate(`/admin-dashboard/plantas/${userData.userId}`);
+    if (userData && userData.userId) {
+      navigate(`/admin-dashboard/plantas/${userData.userId}`);
+    }
   };
 
   if (!userData) {
@@ -53,9 +56,14 @@ function AccountInfo() {
           <label>Fecha de Registro:</label>
           <p>{new Date(userData.createdAt).toLocaleDateString()}</p>
         </div>
-        {userData.role === 'user' && (
+        {userData.role.toLowerCase() === 'user' && (
           <div className="info-group">
-            <button onClick={handleViewSolarPlants}>Info Plantas Solares</button>
+            <button 
+              onClick={handleViewSolarPlants}
+              className="solar-plants-button"
+            >
+              Info Plantas Solares
+            </button>
           </div>
         )}
       </div>
@@ -63,4 +71,4 @@ function AccountInfo() {
   );
 }
 
-export default AccountInfo
+export default AccountInfo;
