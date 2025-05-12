@@ -62,3 +62,5 @@ function AccountInfo() {
     </div>
   );
 }
+
+export default AccountInfo
