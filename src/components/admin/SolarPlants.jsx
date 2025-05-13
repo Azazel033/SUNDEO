@@ -148,34 +148,34 @@ function SolarPlants() {
         </div>
       )}
 
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Capacidad (kW)</th>
-            <th>Fecha de Instalación</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {plants.map((plant) => (
-            <tr key={plant.plantId}>
-              <td>{plant.plantId}</td>
-              <td>{plant.plantName}</td>
-              <td>{plant.capacityKw} kW</td>
-              <td>{new Date(plant.installDate).toLocaleDateString()}</td>
-              <td>
-                <div className="action-buttons">
-                  <button className="btn btn-secondary">
-                  <i className="fas fa-eye"></i>
-                  </button>
-                </div>
-              </td>
+      <div className="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Capacidad (kW)</th>
+              <th>Fecha de Instalación</th>
+              <th>Acciones</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {plants.map((plant) => (
+              <tr key={plant.plantId}>
+                <td>{plant.plantId}</td>
+                <td>{plant.plantName}</td>
+                <td>{plant.capacityKw} kW</td>
+                <td>{new Date(plant.installDate).toLocaleDateString()}</td>
+                <td>
+                  <div className="action-buttons">
+                    <button className="btn btn-secondary">Editar</button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
