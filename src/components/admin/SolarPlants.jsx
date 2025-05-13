@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './UsersTable.css';  // Asegúrate de que el archivo CSS esté disponible
@@ -40,22 +39,11 @@ function SolarPlants() {
       console.error('Error en el fetch de plantas:', error);
     }
   };
-=======
-import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
-
-function SolarPlants() {
-  const [plants, setPlants] = useState([]);
-  const { userId } = useParams();
-  const navigate = useNavigate();
->>>>>>> 8967282d181202b5c76af2a77c6ef486de50b10e
 
   useEffect(() => {
     fetchPlants();
   }, [userId]);
 
-<<<<<<< HEAD
   // Handle form input change
   const handleInputChange = (e) => {
     setFormData(prev => ({
@@ -170,27 +158,6 @@ function SolarPlants() {
       )}
 
       {/* Tabla para mostrar las plantas */}
-=======
-  const fetchPlants = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5130/api/SolarPlants/user/${userId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      setPlants(response.data);
-    } catch (error) {
-      console.error('Error al obtener plantas solares:', error);
-    }
-  };
-
-  const handleViewDetails = (plantId) => {
-    navigate(`/admin-dashboard/plantas/${userId}/detalles/${plantId}`);
-  };
-
-  return (
-    <div className="solar-plants-container">
-      <h2>Plantas Solares</h2>
->>>>>>> 8967282d181202b5c76af2a77c6ef486de50b10e
       <div className="table-container">
         <table>
           <thead>

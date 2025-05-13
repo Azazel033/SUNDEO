@@ -30,13 +30,9 @@ function AccountInfo() {
 
   const handleViewSolarPlants = () => {
     if (userData && userData.userId) {
-<<<<<<< HEAD
       console.log(`/admin-dashboard/plantas/${userData.userId}`)
       navigate(`/admin-dashboard/plantas/${userData.userId}`);
       
-=======
-      navigate(`/admin-dashboard/plantas/${userData.userId}`);
->>>>>>> 8967282d181202b5c76af2a77c6ef486de50b10e
     }
   };
 
