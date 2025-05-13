@@ -4,6 +4,7 @@ import './AdminDashboard.css';
 import UsersTable from './admin/UsersTable';
 import AccountInfo from './admin/AccountInfo';
 import DataView from './admin/DataView';
+import SolarPlants from './admin/SolarPlants'; 
 
 const AdminDashboard = () => {
   const [username, setUsername] = useState("");
@@ -40,7 +41,7 @@ const AdminDashboard = () => {
           <span className="bar"></span>
         </div>
         <ul className="nav-links">
-          <li><Link to="/admin-dashboard/cuenta">Cuenta</Link></li>
+          {/* <li><Link to="/admin-dashboard/cuenta">Cuenta</Link></li> */}
           <li><Link to="/admin-dashboard/usuarios">Editar/Agregar Usuarios</Link></li>
           <li><Link to="/admin-dashboard/datos">Consultar Datos</Link></li>
           <li><a onClick={handleLogout} href="#">Cerrar Sesión</a></li>
@@ -48,13 +49,14 @@ const AdminDashboard = () => {
       </nav>
 
       <div className="content">
-        <h1>Bienvenido a SUENDEO</h1>
-        <h2>{username ? `Hola, ${username}` : "Usuario no encontrado"}</h2>
+        <h1>{username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}</h1>
         
         <Routes>
           <Route path="/cuenta" element={<AccountInfo />} />
           <Route path="/usuarios" element={<UsersTable />} />
           <Route path="/datos" element={<DataView />} />
+          <Route path="/plantas/:userId" element={<SolarPlants />} />
+
         </Routes>
       </div>
     </div>

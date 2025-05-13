@@ -1,23 +1,38 @@
 import { useState, useEffect } from 'react';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './AccountInfo.css';
+
 
 function AccountInfo() {
   const [userData, setUserData] = useState(null);
+  const [searchParams] = useSearchParams();
+  const username = searchParams.get('username');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchUserData();
-  }, []);
+  }, [username]);
 
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('token');
-      const username = localStorage.getItem('username');
-      const response = await axios.get(`http://localhost:5130/api/Users/username/${username}`, {
+      const userToFetch = username || localStorage.getItem('username');
+      const response = await axios.get(`http://localhost:5130/api/Users/username/${userToFetch}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
+      console.log('User data:', response.data); // Para depuración
       setUserData(response.data);
     } catch (error) {
       console.error('Error al obtener datos del usuario:', error);
+    }
+  };
+
+  const handleViewSolarPlants = () => {
+    if (userData && userData.userId) {
+      console.log(`/admin-dashboard/plantas/${userData.userId}`)
+      navigate(`/admin-dashboard/plantas/${userData.userId}`);
+      
     }
   };
 
@@ -45,6 +60,16 @@ function AccountInfo() {
           <label>Fecha de Registro:</label>
           <p>{new Date(userData.createdAt).toLocaleDateString()}</p>
         </div>
+        {userData.role.toLowerCase() === 'user' && (
+          <div className="info-group">
+            <button 
+              onClick={handleViewSolarPlants}
+              className="solar-plants-button"
+            >
+              Info Plantas Solares
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
