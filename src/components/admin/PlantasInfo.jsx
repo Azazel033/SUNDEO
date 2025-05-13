@@ -1,6 +1,6 @@
-// PlantasInfo.js
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './PlantasInfo.css';
 
 function PlantasInfo() {
   const { plantId } = useParams();
@@ -62,17 +62,16 @@ function PlantasInfo() {
     <div className="plant-info-container">
       <h2>Información de la Planta {plantId}</h2>
       
-      {/* Energy Production Table */}
-      <h3>Energy Production</h3>
+      <h3>Producción de Energía</h3>
       <table>
         <thead>
           <tr>
             <th>ID</th>
             <th>Timestamp</th>
-            <th>Energy (kWh)</th>
-            <th>DC Voltage</th>
-            <th>AC Voltage</th>
-            <th>Temperature</th>
+            <th>Energía (kWh)</th>
+            <th>Voltaje DC</th>
+            <th>Voltaje AC</th>
+            <th>Temperatura</th>
           </tr>
         </thead>
         <tbody>
@@ -89,17 +88,16 @@ function PlantasInfo() {
         </tbody>
       </table>
 
-      {/* Inverters Table */}
-      <h3>Inverters</h3>
+      <h3>Inversores</h3>
       <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Model</th>
-            <th>Max Power (kW)</th>
-            <th>Efficiency</th>
-            <th>Serial Number</th>
-            <th>Installation Date</th>
+            <th>Modelo</th>
+            <th>Potencia Máxima (kW)</th>
+            <th>Eficiencia</th>
+            <th>Número de Serie</th>
+            <th>Fecha de Instalación</th>
           </tr>
         </thead>
         <tbody>
@@ -116,17 +114,16 @@ function PlantasInfo() {
         </tbody>
       </table>
 
-      {/* Solar Panels Table */}
-      <h3>Solar Panels</h3>
+      <h3>Paneles Solares</h3>
       <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Model</th>
-            <th>Power Rating (W)</th>
-            <th>Orientation</th>
-            <th>Tilt Angle</th>
-            <th>Installation Date</th>
+            <th>Modelo</th>
+            <th>Potencia (W)</th>
+            <th>Orientación</th>
+            <th>Ángulo de Inclinación</th>
+            <th>Fecha de Instalación</th>
           </tr>
         </thead>
         <tbody>
@@ -143,16 +140,15 @@ function PlantasInfo() {
         </tbody>
       </table>
 
-      {/* Batteries Table */}
-      <h3>Batteries</h3>
+      <h3>Baterías</h3>
       <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Model</th>
-            <th>Capacity (kWh)</th>
-            <th>Efficiency</th>
-            <th>Installation Date</th>
+            <th>Modelo</th>
+            <th>Capacidad (kWh)</th>
+            <th>Eficiencia</th>
+            <th>Fecha de Instalación</th>
           </tr>
         </thead>
         <tbody>
