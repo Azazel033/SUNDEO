@@ -166,11 +166,6 @@ function SolarPlants() {
               <th>Nombre</th>
               <th>Capacidad (kW)</th>
               <th>Fecha de Instalación</th>
-<<<<<<< HEAD
-=======
-              <th>Latitud</th>
-              <th>Longitud</th>
->>>>>>> 8967282d181202b5c76af2a77c6ef486de50b10e
               <th>Acciones</th>
             </tr>
           </thead>
@@ -179,22 +174,11 @@ function SolarPlants() {
               <tr key={plant.plantId}>
                 <td>{plant.plantId}</td>
                 <td>{plant.plantName}</td>
-<<<<<<< HEAD
                 <td>{plant.capacityKw} kW</td>
                 <td>{new Date(plant.installDate).toLocaleDateString()}</td>
                 <td>
                   <button className="edit-button">Editar</button>
                   {/* Aquí puedes agregar funcionalidad para editar la planta */}
-=======
-                <td>{plant.capacityKw}</td>
-                <td>{new Date(plant.installDate).toLocaleDateString()}</td>
-                <td>{plant.latitude}</td>
-                <td>{plant.longitude}</td>
-                <td>
-                  <button onClick={() => handleViewDetails(plant.plantId)}>
-                    Ver Detalles
-                  </button>
->>>>>>> 8967282d181202b5c76af2a77c6ef486de50b10e
                 </td>
               </tr>
             ))}
@@ -205,8 +189,4 @@ function SolarPlants() {
   );
 }
 
-<<<<<<< HEAD
 export default SolarPlants;
-=======
-export default SolarPlants;
->>>>>>> 8967282d181202b5c76af2a77c6ef486de50b10e
