@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import AdminDashboard from './components/AdminDashboard';
 import UserDashboard from './components/UserDashboard';
+import SolarPlants from './components/admin/SolarPlants';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -35,7 +36,9 @@ function App() {
               <AdminDashboard />
             </PrivateRoute>
           }
-        />
+        >
+          <Route path="plantas/:userId" element={<SolarPlants />} />
+        </Route>
         <Route
           path="/user-dashboard"
           element={

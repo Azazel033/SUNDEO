@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, useNavigate, Link } from 'react-router-dom';
+import { Routes, Route, useNavigate, Link, Outlet } from 'react-router-dom';
 import './AdminDashboard.css';
 import UsersTable from './admin/UsersTable';
 import AccountInfo from './admin/AccountInfo';
@@ -58,6 +58,7 @@ const AdminDashboard = () => {
           <Route path="/plantas/:userId" element={<SolarPlants />} />
 
         </Routes>
+        <Outlet />
       </div>
     </div>
   );
