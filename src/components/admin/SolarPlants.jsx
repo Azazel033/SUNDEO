@@ -167,7 +167,9 @@ function SolarPlants() {
               <td>{new Date(plant.installDate).toLocaleDateString()}</td>
               <td>
                 <div className="action-buttons">
-                  <button className="btn btn-secondary">Editar</button>
+                  <button className="btn btn-secondary">
+                  <i className="fas fa-eye"></i>
+                  </button>
                 </div>
               </td>
             </tr>
