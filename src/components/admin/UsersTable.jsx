@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './UsersTable.css';
 
 function UsersTable() {
   const navigate = useNavigate();
@@ -27,7 +26,6 @@ function UsersTable() {
       const response = await axios.get('http://localhost:5130/api/Users', {
         headers: { Authorization: `Bearer ${token}` }
       });
-      console.log('Usuarios recibidos:', response.data);
       setUsers(response.data);
     } catch (error) {
       console.error('Error al obtener usuarios:', error);
@@ -118,15 +116,15 @@ function UsersTable() {
   return (
     <div className="users-table-container">
       <h2>Gestión de Usuarios</h2>
-      <button onClick={() => setShowModal(true)}>Agregar Usuario</button>
+      <button className="btn btn-primary" onClick={() => setShowModal(true)}>Agregar Usuario</button>
 
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
             <h3>Agregar Nuevo Usuario</h3>
             {error && <div className="error-message">{error}</div>}
-            <form onSubmit={handleSubmit}>
-              <div>
+            <form onSubmit={handleSubmit} className="form-container">
+              <div className="form-group">
                 <label>Nombre de Usuario:</label>
                 <input
                   type="text"
@@ -136,7 +134,7 @@ function UsersTable() {
                   required
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <label>Contraseña:</label>
                 <input
                   type="password"
@@ -146,7 +144,7 @@ function UsersTable() {
                   required
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <label>Email:</label>
                 <input
                   type="email"
@@ -156,7 +154,7 @@ function UsersTable() {
                   required
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <label>Rol:</label>
                 <select
                   name="role"
@@ -168,8 +166,10 @@ function UsersTable() {
                   <option value="admin">Administrador</option>
                 </select>
               </div>
-              <button type="submit">Guardar</button>
-              <button type="button" onClick={() => setShowModal(false)}>Cancelar</button>
+              <div className="action-buttons">
+                <button type="submit" className="btn btn-primary">Guardar</button>
+                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Cancelar</button>
+              </div>
             </form>
           </div>
         </div>
@@ -209,8 +209,10 @@ function UsersTable() {
                 <td>{new Date(user.createdAt).toLocaleDateString()}</td>
                 <td>{user.role}</td>
                 <td>
-                  <button onClick={() => handleInspectUser(user.username)}>Inspeccionar</button>
-                  <button onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
+                  <div className="action-buttons">
+                    <button className="btn btn-secondary" onClick={() => handleInspectUser(user.username)}>Inspeccionar</button>
+                    <button className="btn btn-danger" onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
+                  </div>
                 </td>
               </tr>
             ))}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './UsersTable.css';  // Asegúrate de que el archivo CSS esté disponible
 
 function SolarPlants() {
   const { userId } = useParams();
@@ -14,7 +13,6 @@ function SolarPlants() {
     longitude: ''
   });
 
-  // Fetch plants data
   const fetchPlants = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -32,9 +30,7 @@ function SolarPlants() {
       }
 
       const data = await res.json();
-      console.log('Datos de plantas recibidos:', data);
       setPlants(data);
-
     } catch (error) {
       console.error('Error en el fetch de plantas:', error);
     }
@@ -44,7 +40,6 @@ function SolarPlants() {
     fetchPlants();
   }, [userId]);
 
-  // Handle form input change
   const handleInputChange = (e) => {
     setFormData(prev => ({
       ...prev,
@@ -52,7 +47,10 @@ function SolarPlants() {
     }));
   };
 
-  // Handle creation of a new plant
+   const handleViewDevices = (plantId) => {
+    navigate(`/admin-dashboard/cuenta?plantId=${plantId}`); 
+  };
+
   const handleCreate = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -82,7 +80,7 @@ function SolarPlants() {
           latitude: '',
           longitude: ''
         });
-        fetchPlants(); // Refresh list
+        fetchPlants();
       } else {
         console.error('Error creando planta:', await response.text());
       }
@@ -92,19 +90,16 @@ function SolarPlants() {
   };
 
   return (
-    <div>
+    <div className="users-table-container">
       <h2>Plantas del usuario {userId}</h2>
+      <button className="btn btn-primary" onClick={() => setShowModal(true)}>Agregar Planta</button>
 
-      {/* Botón para agregar una nueva planta */}
-      <button onClick={() => setShowModal(true)} className="add-plant-button">Agregar Planta</button>
-
-      {/* Modal para agregar una nueva planta */}
       {showModal && (
         <div className="modal-overlay">
-          <div className="account-info-container">
+          <div className="modal-content">
             <h3>Agregar Nueva Planta</h3>
-            <form>
-              <div className="info-group">
+            <form className="form-container">
+              <div className="form-group">
                 <label>Nombre:</label>
                 <input 
                   name="plantName" 
@@ -112,7 +107,7 @@ function SolarPlants() {
                   onChange={handleInputChange} 
                 />
               </div>
-              <div className="info-group">
+              <div className="form-group">
                 <label>Capacidad (kW):</label>
                 <input 
                   name="capacityKw" 
@@ -121,7 +116,7 @@ function SolarPlants() {
                   onChange={handleInputChange} 
                 />
               </div>
-              <div className="info-group">
+              <div className="form-group">
                 <label>Fecha instalación:</label>
                 <input 
                   name="installDate" 
@@ -130,7 +125,7 @@ function SolarPlants() {
                   onChange={handleInputChange} 
                 />
               </div>
-              <div className="info-group">
+              <div className="form-group">
                 <label>Latitud:</label>
                 <input 
                   name="latitude" 
@@ -139,7 +134,7 @@ function SolarPlants() {
                   onChange={handleInputChange} 
                 />
               </div>
-              <div className="info-group">
+              <div className="form-group">
                 <label>Longitud:</label>
                 <input 
                   name="longitude" 
@@ -148,16 +143,15 @@ function SolarPlants() {
                   onChange={handleInputChange} 
                 />
               </div>
-              <div className="modal-actions">
-                <button type="button" onClick={handleCreate} className="submit-button">Crear</button>
-                <button type="button" onClick={() => setShowModal(false)} className="cancel-button">Cancelar</button>
+              <div className="action-buttons">
+                <button type="button" onClick={handleCreate} className="btn btn-primary">Crear</button>
+                <button type="button" onClick={() => setShowModal(false)} className="btn btn-secondary">Cancelar</button>
               </div>
             </form>
           </div>
         </div>
       )}
 
-      {/* Tabla para mostrar las plantas */}
       <div className="table-container">
         <table>
           <thead>
@@ -177,8 +171,10 @@ function SolarPlants() {
                 <td>{plant.capacityKw} kW</td>
                 <td>{new Date(plant.installDate).toLocaleDateString()}</td>
                 <td>
-                  <button className="edit-button">Editar</button>
-                  {/* Aquí puedes agregar funcionalidad para editar la planta */}
+                  <div className="action-buttons">
+                    <button onClick={() => handleViewDevices(plant.plantId)} className="btn btn-secondary">
+                  <i className="fas fa-eye"></i></button>
+                  </div>
                 </td>
               </tr>
             ))}
@@ -189,4 +185,4 @@ function SolarPlants() {
   );
 }
 
-export default SolarPlants;
+export default SolarPlants; 

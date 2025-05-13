@@ -55,7 +55,7 @@ const AdminDashboard = () => {
           <Route path="/cuenta" element={<AccountInfo />} />
           <Route path="/usuarios" element={<UsersTable />} />
           <Route path="/datos" element={<DataView />} />
-          <Route path="/plantas/:userId" element={<SolarPlants />} />
+          {/* <Route path="/plantas/:userId" element={<SolarPlants />} /> */}
 
         </Routes>
         <Outlet />
