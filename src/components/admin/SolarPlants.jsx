@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function SolarPlants() {
   const { userId } = useParams();
+  const navigate = useNavigate();
   const [plants, setPlants] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -47,8 +48,8 @@ function SolarPlants() {
     }));
   };
 
-   const handleViewDevices = (plantId) => {
-    navigate(`/admin-dashboard/cuenta?plantId=${plantId}`); 
+  const handleViewDevices = (plantId) => {
+    navigate(`/plant-info/${plantId}`);
   };
 
   const handleCreate = async () => {
@@ -173,7 +174,8 @@ function SolarPlants() {
                 <td>
                   <div className="action-buttons">
                     <button onClick={() => handleViewDevices(plant.plantId)} className="btn btn-secondary">
-                  <i className="fas fa-eye"></i></button>
+                      <i className="fas fa-eye"></i> Ver Detalles
+                    </button>
                   </div>
                 </td>
               </tr>
@@ -185,4 +187,4 @@ function SolarPlants() {
   );
 }
 
-export default SolarPlants; 
+export default SolarPlants;
