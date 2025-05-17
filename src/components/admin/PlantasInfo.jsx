@@ -9,13 +9,22 @@ function PlantasInfo() {
   const [solarPanels, setSolarPanels] = useState([]);
   const [batteries, setBatteries] = useState([]);
 
-  // Estados para controlar modales
+  // Estados para modales
   const [showModalEnergy, setShowModalEnergy] = useState(false);
   const [showModalInverter, setShowModalInverter] = useState(false);
   const [showModalPanel, setShowModalPanel] = useState(false);
   const [showModalBattery, setShowModalBattery] = useState(false);
+  const [editingId, setEditingId] = useState(null);
 
-  // Form data states para cada modal
+  // Keys para los IDs de cada entidad
+  const entityIdKeys = {
+    EnergyProduction: 'productionId',
+    Inverters: 'inverterId',
+    SolarPanel: 'panelId',
+    Battery: 'batteryId'
+  };
+
+  // Form data states
   const [formEnergy, setFormEnergy] = useState({
     timestamp: '',
     energyKwh: '',
@@ -52,33 +61,25 @@ function PlantasInfo() {
     try {
       const token = localStorage.getItem('token');
 
-      // Energy Production
-      const energyRes = await fetch(`http://localhost:5130/api/EnergyProduction/plant/${plantId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      const energyData = await energyRes.json();
-      setEnergyProductions(energyData);
+      const [energyRes, inverterRes, panelRes, batteryRes] = await Promise.all([
+        fetch(`http://localhost:5130/api/EnergyProduction/plant/${plantId}`, {
+          headers: { Authorization: `Bearer ${token}` }
+        }),
+        fetch(`http://localhost:5130/api/Inverters/plant/${plantId}`, {
+          headers: { Authorization: `Bearer ${token}` }
+        }),
+        fetch(`http://localhost:5130/api/SolarPanel/plant/${plantId}`, {
+          headers: { Authorization: `Bearer ${token}` }
+        }),
+        fetch(`http://localhost:5130/api/Battery/plant/${plantId}`, {
+          headers: { Authorization: `Bearer ${token}` }
+        })
+      ]);
 
-      // Inverters
-      const inverterRes = await fetch(`http://localhost:5130/api/Inverters/plant/${plantId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      const inverterData = await inverterRes.json();
-      setInverters(inverterData);
-
-      // Solar Panels
-      const panelRes = await fetch(`http://localhost:5130/api/SolarPanel/plant/${plantId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      const panelData = await panelRes.json();
-      setSolarPanels(panelData);
-
-      // Batteries
-      const batteryRes = await fetch(`http://localhost:5130/api/Battery/plant/${plantId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      const batteryData = await batteryRes.json();
-      setBatteries(batteryData);
+      setEnergyProductions(await energyRes.json());
+      setInverters(await inverterRes.json());
+      setSolarPanels(await panelRes.json());
+      setBatteries(await batteryRes.json());
 
     } catch (error) {
       console.error('Error al obtener los dispositivos:', error);
@@ -95,16 +96,79 @@ function PlantasInfo() {
     setter(prev => ({ ...prev, [name]: value }));
   };
 
-  // Validación simple para campos vacíos
+  // Validación de campos
   const validateForm = (form) => {
     return Object.values(form).every(val => val !== '' && val !== null);
   };
 
-  // Handlers para agregar registros
+  // Función genérica para DELETE
+  const handleDelete = async (entityType, id) => {
+    if (!window.confirm(`¿Estás seguro de eliminar este ${entityType}?`)) return;
+    
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`http://localhost:5130/api/${entityType}/${id}`, {
+        method: 'DELETE',
+        headers: { 
+          'Authorization': `Bearer ${token}`,
+          'accept': '*/*'
+        }
+      });
+
+      if (response.ok) {
+        fetchDevices();
+        alert(`${entityType} eliminado/a correctamente`);
+      } else {
+        throw new Error(await response.text());
+      }
+    } catch (error) {
+      alert(`Error al eliminar: ${error.message}`);
+    }
+  };
+
+  // Función genérica para PUT (editar)
+  const handleSaveEdit = async (entityType, id, formData, entityIdKey) => {
+    try {
+      const token = localStorage.getItem('token');
+      const payload = {
+        [entityIdKey]: parseInt(id),
+        plantId: parseInt(plantId),
+        ...formData
+      };
+
+      const response = await fetch(`http://localhost:5130/api/${entityType}/${id}`, {
+        method: 'PUT',
+        headers: { 
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+          'accept': '*/*'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        fetchDevices();
+        setEditingId(null);
+        // Cerrar el modal correspondiente
+        if (entityType === 'EnergyProduction') setShowModalEnergy(false);
+        if (entityType === 'Inverters') setShowModalInverter(false);
+        if (entityType === 'SolarPanel') setShowModalPanel(false);
+        if (entityType === 'Battery') setShowModalBattery(false);
+        
+        alert(`${entityType} actualizado/a correctamente`);
+      } else {
+        throw new Error(await response.text());
+      }
+    } catch (error) {
+      alert(`Error al editar: ${error.message}`);
+    }
+  };
+
+  // Handlers para agregar registros (POST)
   const handleAddEnergyProduction = async (e) => {
     e.preventDefault();
     if (!validateForm(formEnergy)) {
-      alert("Por favor completa todos los campos del formulario de Producción de Energía.");
+      alert("Por favor completa todos los campos.");
       return;
     }
     try {
@@ -112,9 +176,9 @@ function PlantasInfo() {
       const response = await fetch('http://localhost:5130/api/EnergyProduction', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${token}`,
+          'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
-          Accept: 'text/plain'
+          'Accept': 'text/plain'
         },
         body: JSON.stringify({
           plantId: parseInt(plantId),
@@ -130,18 +194,17 @@ function PlantasInfo() {
         setFormEnergy({ timestamp: '', energyKwh: '', dcVoltage: '', acVoltage: '', temperature: '' });
         fetchDevices();
       } else {
-        const errorText = await response.text();
-        alert(`Error al agregar producción de energía: ${errorText}`);
+        throw new Error(await response.text());
       }
     } catch (error) {
-      alert('Error en la solicitud: ' + error.message);
+      alert(`Error: ${error.message}`);
     }
   };
 
   const handleAddInverter = async (e) => {
     e.preventDefault();
     if (!validateForm(formInverter)) {
-      alert("Por favor completa todos los campos del formulario de Inversores.");
+      alert("Por favor completa todos los campos.");
       return;
     }
     try {
@@ -149,9 +212,9 @@ function PlantasInfo() {
       const response = await fetch('http://localhost:5130/api/Inverters', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${token}`,
+          'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
-          Accept: 'text/plain'
+          'Accept': 'text/plain'
         },
         body: JSON.stringify({
           plantId: parseInt(plantId),
@@ -167,18 +230,17 @@ function PlantasInfo() {
         setFormInverter({ model: '', maxPowerKw: '', efficiency: '', serialNumber: '', installationDate: '' });
         fetchDevices();
       } else {
-        const errorText = await response.text();
-        alert(`Error al agregar inversor: ${errorText}`);
+        throw new Error(await response.text());
       }
     } catch (error) {
-      alert('Error en la solicitud: ' + error.message);
+      alert(`Error: ${error.message}`);
     }
   };
 
   const handleAddPanel = async (e) => {
     e.preventDefault();
     if (!validateForm(formPanel)) {
-      alert("Por favor completa todos los campos del formulario de Paneles Solares.");
+      alert("Por favor completa todos los campos.");
       return;
     }
     try {
@@ -186,9 +248,9 @@ function PlantasInfo() {
       const response = await fetch('http://localhost:5130/api/SolarPanel', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${token}`,
+          'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
-          Accept: 'text/plain'
+          'Accept': 'text/plain'
         },
         body: JSON.stringify({
           plantId: parseInt(plantId),
@@ -204,18 +266,17 @@ function PlantasInfo() {
         setFormPanel({ model: '', powerRatingW: '', orientation: '', tiltAngle: '', installationDate: '' });
         fetchDevices();
       } else {
-        const errorText = await response.text();
-        alert(`Error al agregar panel solar: ${errorText}`);
+        throw new Error(await response.text());
       }
     } catch (error) {
-      alert('Error en la solicitud: ' + error.message);
+      alert(`Error: ${error.message}`);
     }
   };
 
   const handleAddBattery = async (e) => {
     e.preventDefault();
     if (!validateForm(formBattery)) {
-      alert("Por favor completa todos los campos del formulario de Baterías.");
+      alert("Por favor completa todos los campos.");
       return;
     }
     try {
@@ -223,9 +284,9 @@ function PlantasInfo() {
       const response = await fetch('http://localhost:5130/api/Battery', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${token}`,
+          'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
-          Accept: 'text/plain'
+          'Accept': 'text/plain'
         },
         body: JSON.stringify({
           plantId: parseInt(plantId),
@@ -240,11 +301,10 @@ function PlantasInfo() {
         setFormBattery({ model: '', capacityKwh: '', efficiency: '', installationDate: '' });
         fetchDevices();
       } else {
-        const errorText = await response.text();
-        alert(`Error al agregar batería: ${errorText}`);
+        throw new Error(await response.text());
       }
     } catch (error) {
-      alert('Error en la solicitud: ' + error.message);
+      alert(`Error: ${error.message}`);
     }
   };
 
@@ -252,34 +312,67 @@ function PlantasInfo() {
     <div className="plant-info-container">
       <h2>Información de la Planta {plantId}</h2>
 
-      {/* Producción de Energía */}
+      {/* --- Sección Producción de Energía --- */}
       <div className="section-header">
         <h3>Producción de Energía</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalEnergy(true)}>Agregar Producción</button>
+        <button className="btn btn-primary" onClick={() => setShowModalEnergy(true)}>
+          Agregar Producción
+        </button>
       </div>
       <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Fecha de registro</th>
+            <th>Fecha</th>
             <th>Energía (kWh)</th>
             <th>Voltaje DC</th>
             <th>Voltaje AC</th>
             <th>Temperatura</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
-          {energyProductions.length > 0 ? energyProductions.map((production) => (
-            <tr key={production.productionId}>
-              <td>{production.productionId}</td>
-              <td>{new Date(production.timestamp).toLocaleString()}</td>
-              <td>{production.energyKwh} kWh</td>
-              <td>{production.dcVoltage} V</td>
-              <td>{production.acVoltage} V</td>
-              <td>{production.temperature} °C</td>
+          {energyProductions.length > 0 ? (
+            energyProductions.map((prod) => (
+              <tr key={prod.productionId}>
+                <td>{prod.productionId}</td>
+                <td>{new Date(prod.timestamp).toLocaleString()}</td>
+                <td>{prod.energyKwh} kWh</td>
+                <td>{prod.dcVoltage} V</td>
+                <td>{prod.acVoltage} V</td>
+                <td>{prod.temperature} °C</td>
+                <td>
+                  <div className="action-buttons">
+                    <button
+                      className="btn btn-secondary"
+                      onClick={() => {
+                        setEditingId(prod.productionId);
+                        setFormEnergy({
+                          timestamp: prod.timestamp.split('.')[0], // Ajustar formato fecha
+                          energyKwh: prod.energyKwh,
+                          dcVoltage: prod.dcVoltage,
+                          acVoltage: prod.acVoltage,
+                          temperature: prod.temperature
+                        });
+                        setShowModalEnergy(true);
+                      }}
+                    >
+                      Editar
+                    </button>
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => handleDelete('EnergyProduction', prod.productionId)}
+                    >
+                      Eliminar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
             </tr>
-          )) : (
-            <tr><td colSpan="6" style={{ textAlign: 'center' }}>No hay datos disponibles</td></tr>
           )}
         </tbody>
       </table>
@@ -288,13 +381,19 @@ function PlantasInfo() {
       {showModalEnergy && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h3>Agregar Producción de Energía</h3>
-            <form onSubmit={handleAddEnergyProduction} className="form-container">
+            <h3>{editingId ? 'Editar' : 'Agregar'} Producción de Energía</h3>
+            <form onSubmit={editingId ? 
+              (e) => {
+                e.preventDefault();
+                handleSaveEdit('EnergyProduction', editingId, formEnergy, entityIdKeys.EnergyProduction);
+              } : 
+              handleAddEnergyProduction
+            }>
               <div className="form-group">
-                <label>Timestamp:</label>
+                <label>Fecha y Hora:</label>
                 <input
                   type="datetime-local"
-                  name="Fecha de registro"
+                  name="timestamp"
                   value={formEnergy.timestamp}
                   onChange={handleInputChange(setFormEnergy)}
                   required
@@ -348,18 +447,32 @@ function PlantasInfo() {
                 />
               </div>
               <div className="action-buttons">
-                <button type="submit" className="btn btn-primary">Agregar</button>
-                <button type="button" onClick={() => setShowModalEnergy(false)} className="btn btn-secondary">Cancelar</button>
+                <button type="submit" className="btn btn-primary">
+                  {editingId ? 'Guardar Cambios' : 'Agregar'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowModalEnergy(false);
+                    setEditingId(null);
+                    setFormEnergy({ timestamp: '', energyKwh: '', dcVoltage: '', acVoltage: '', temperature: '' });
+                  }}
+                  className="btn btn-secondary"
+                >
+                  Cancelar
+                </button>
               </div>
             </form>
           </div>
         </div>
       )}
 
-      {/* Inversores */}
+      {/* --- Sección Inversores --- */}
       <div className="section-header">
         <h3>Inversores</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalInverter(true)}>Agregar Inversor</button>
+        <button className="btn btn-primary" onClick={() => setShowModalInverter(true)}>
+          Agregar Inversor
+        </button>
       </div>
       <table>
         <thead>
@@ -370,20 +483,51 @@ function PlantasInfo() {
             <th>Eficiencia (%)</th>
             <th>N° Serie</th>
             <th>Fecha Instalación</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
-          {inverters.length > 0 ? inverters.map((inv) => (
-            <tr key={inv.inverterId}>
-              <td>{inv.inverterId}</td>
-              <td>{inv.model}</td>
-              <td>{inv.maxPowerKw} kW</td>
-              <td>{inv.efficiency} %</td>
-              <td>{inv.serialNumber}</td>
-              <td>{new Date(inv.installationDate).toLocaleDateString()}</td>
+          {inverters.length > 0 ? (
+            inverters.map((inv) => (
+              <tr key={inv.inverterId}>
+                <td>{inv.inverterId}</td>
+                <td>{inv.model}</td>
+                <td>{inv.maxPowerKw} kW</td>
+                <td>{inv.efficiency} %</td>
+                <td>{inv.serialNumber}</td>
+                <td>{new Date(inv.installationDate).toLocaleDateString()}</td>
+                <td>
+                  <div className="action-buttons">
+                    <button
+                      className="btn btn-secondary"
+                      onClick={() => {
+                        setEditingId(inv.inverterId);
+                        setFormInverter({
+                          model: inv.model,
+                          maxPowerKw: inv.maxPowerKw,
+                          efficiency: inv.efficiency,
+                          serialNumber: inv.serialNumber,
+                          installationDate: inv.installationDate.split('T')[0]
+                        });
+                        setShowModalInverter(true);
+                      }}
+                    >
+                      Editar
+                    </button>
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => handleDelete('Inverters', inv.inverterId)}
+                    >
+                      Eliminar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
             </tr>
-          )) : (
-            <tr><td colSpan="6" style={{ textAlign: 'center' }}>No hay datos disponibles</td></tr>
           )}
         </tbody>
       </table>
@@ -392,8 +536,14 @@ function PlantasInfo() {
       {showModalInverter && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h3>Agregar Inversor</h3>
-            <form onSubmit={handleAddInverter} className="form-container">
+            <h3>{editingId ? 'Editar' : 'Agregar'} Inversor</h3>
+            <form onSubmit={editingId ? 
+              (e) => {
+                e.preventDefault();
+                handleSaveEdit('Inverters', editingId, formInverter, entityIdKeys.Inverters);
+              } : 
+              handleAddInverter
+            }>
               <div className="form-group">
                 <label>Modelo:</label>
                 <input
@@ -450,18 +600,32 @@ function PlantasInfo() {
                 />
               </div>
               <div className="action-buttons">
-                <button type="submit" className="btn btn-primary">Agregar</button>
-                <button type="button" onClick={() => setShowModalInverter(false)} className="btn btn-secondary">Cancelar</button>
+                <button type="submit" className="btn btn-primary">
+                  {editingId ? 'Guardar Cambios' : 'Agregar'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowModalInverter(false);
+                    setEditingId(null);
+                    setFormInverter({ model: '', maxPowerKw: '', efficiency: '', serialNumber: '', installationDate: '' });
+                  }}
+                  className="btn btn-secondary"
+                >
+                  Cancelar
+                </button>
               </div>
             </form>
           </div>
         </div>
       )}
 
-      {/* Paneles Solares */}
+      {/* --- Sección Paneles Solares --- */}
       <div className="section-header">
         <h3>Paneles Solares</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalPanel(true)}>Agregar Panel Solar</button>
+        <button className="btn btn-primary" onClick={() => setShowModalPanel(true)}>
+          Agregar Panel Solar
+        </button>
       </div>
       <table>
         <thead>
@@ -470,22 +634,53 @@ function PlantasInfo() {
             <th>Modelo</th>
             <th>Potencia (W)</th>
             <th>Orientación</th>
-            <th>Ángulo de Inclinación</th>
+            <th>Ángulo Inclinación</th>
             <th>Fecha Instalación</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
-          {solarPanels.length > 0 ? solarPanels.map((panel) => (
-            <tr key={panel.panelId}>
-              <td>{panel.panelId}</td>
-              <td>{panel.model}</td>
-              <td>{panel.powerRatingW} W</td>
-              <td>{panel.orientation}</td>
-              <td>{panel.tiltAngle}°</td>
-              <td>{new Date(panel.installationDate).toLocaleDateString()}</td>
+          {solarPanels.length > 0 ? (
+            solarPanels.map((panel) => (
+              <tr key={panel.panelId}>
+                <td>{panel.panelId}</td>
+                <td>{panel.model}</td>
+                <td>{panel.powerRatingW} W</td>
+                <td>{panel.orientation}</td>
+                <td>{panel.tiltAngle}°</td>
+                <td>{new Date(panel.installationDate).toLocaleDateString()}</td>
+                <td>
+                  <div className="action-buttons">
+                    <button
+                      className="btn btn-secondary"
+                      onClick={() => {
+                        setEditingId(panel.panelId);
+                        setFormPanel({
+                          model: panel.model,
+                          powerRatingW: panel.powerRatingW,
+                          orientation: panel.orientation,
+                          tiltAngle: panel.tiltAngle,
+                          installationDate: panel.installationDate.split('T')[0]
+                        });
+                        setShowModalPanel(true);
+                      }}
+                    >
+                      Editar
+                    </button>
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => handleDelete('SolarPanel', panel.panelId)}
+                    >
+                      Eliminar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
             </tr>
-          )) : (
-            <tr><td colSpan="6" style={{ textAlign: 'center' }}>No hay datos disponibles</td></tr>
           )}
         </tbody>
       </table>
@@ -494,8 +689,14 @@ function PlantasInfo() {
       {showModalPanel && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h3>Agregar Panel Solar</h3>
-            <form onSubmit={handleAddPanel} className="form-container">
+            <h3>{editingId ? 'Editar' : 'Agregar'} Panel Solar</h3>
+            <form onSubmit={editingId ? 
+              (e) => {
+                e.preventDefault();
+                handleSaveEdit('SolarPanel', editingId, formPanel, entityIdKeys.SolarPanel);
+              } : 
+              handleAddPanel
+            }>
               <div className="form-group">
                 <label>Modelo:</label>
                 <input
@@ -529,7 +730,7 @@ function PlantasInfo() {
                 />
               </div>
               <div className="form-group">
-                <label>Ángulo de Inclinación (°):</label>
+                <label>Ángulo Inclinación (°):</label>
                 <input
                   type="number"
                   name="tiltAngle"
@@ -550,18 +751,32 @@ function PlantasInfo() {
                 />
               </div>
               <div className="action-buttons">
-                <button type="submit" className="btn btn-primary">Agregar</button>
-                <button type="button" onClick={() => setShowModalPanel(false)} className="btn btn-secondary">Cancelar</button>
+                <button type="submit" className="btn btn-primary">
+                  {editingId ? 'Guardar Cambios' : 'Agregar'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowModalPanel(false);
+                    setEditingId(null);
+                    setFormPanel({ model: '', powerRatingW: '', orientation: '', tiltAngle: '', installationDate: '' });
+                  }}
+                  className="btn btn-secondary"
+                >
+                  Cancelar
+                </button>
               </div>
             </form>
           </div>
         </div>
       )}
 
-      {/* Baterías */}
+      {/* --- Sección Baterías --- */}
       <div className="section-header">
         <h3>Baterías</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalBattery(true)}>Agregar Batería</button>
+        <button className="btn btn-primary" onClick={() => setShowModalBattery(true)}>
+          Agregar Batería
+        </button>
       </div>
       <table>
         <thead>
@@ -571,19 +786,49 @@ function PlantasInfo() {
             <th>Capacidad (kWh)</th>
             <th>Eficiencia (%)</th>
             <th>Fecha Instalación</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
-          {batteries.length > 0 ? batteries.map((bat) => (
-            <tr key={bat.batteryId}>
-              <td>{bat.batteryId}</td>
-              <td>{bat.model}</td>
-              <td>{bat.capacityKwh} kWh</td>
-              <td>{bat.efficiency} %</td>
-              <td>{new Date(bat.installationDate).toLocaleDateString()}</td>
+          {batteries.length > 0 ? (
+            batteries.map((bat) => (
+              <tr key={bat.batteryId}>
+                <td>{bat.batteryId}</td>
+                <td>{bat.model}</td>
+                <td>{bat.capacityKwh} kWh</td>
+                <td>{bat.efficiency} %</td>
+                <td>{new Date(bat.installationDate).toLocaleDateString()}</td>
+                <td>
+                  <div className="action-buttons">
+                    <button
+                      className="btn btn-secondary"
+                      onClick={() => {
+                        setEditingId(bat.batteryId);
+                        setFormBattery({
+                          model: bat.model,
+                          capacityKwh: bat.capacityKwh,
+                          efficiency: bat.efficiency,
+                          installationDate: bat.installationDate.split('T')[0]
+                        });
+                        setShowModalBattery(true);
+                      }}
+                    >
+                      Editar
+                    </button>
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => handleDelete('Battery', bat.batteryId)}
+                    >
+                      Eliminar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="6" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
             </tr>
-          )) : (
-            <tr><td colSpan="5" style={{ textAlign: 'center' }}>No hay datos disponibles</td></tr>
           )}
         </tbody>
       </table>
@@ -592,8 +837,14 @@ function PlantasInfo() {
       {showModalBattery && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h3>Agregar Batería</h3>
-            <form onSubmit={handleAddBattery} className="form-container">
+            <h3>{editingId ? 'Editar' : 'Agregar'} Batería</h3>
+            <form onSubmit={editingId ? 
+              (e) => {
+                e.preventDefault();
+                handleSaveEdit('Battery', editingId, formBattery, entityIdKeys.Battery);
+              } : 
+              handleAddBattery
+            }>
               <div className="form-group">
                 <label>Modelo:</label>
                 <input
@@ -640,14 +891,25 @@ function PlantasInfo() {
                 />
               </div>
               <div className="action-buttons">
-                <button type="submit" className="btn btn-primary">Agregar</button>
-                <button type="button" onClick={() => setShowModalBattery(false)} className="btn btn-secondary">Cancelar</button>
+                <button type="submit" className="btn btn-primary">
+                  {editingId ? 'Guardar Cambios' : 'Agregar'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowModalBattery(false);
+                    setEditingId(null);
+                    setFormBattery({ model: '', capacityKwh: '', efficiency: '', installationDate: '' });
+                  }}
+                  className="btn btn-secondary"
+                >
+                  Cancelar
+                </button>
               </div>
             </form>
           </div>
         </div>
       )}
-
     </div>
   );
 }
