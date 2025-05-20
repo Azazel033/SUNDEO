@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import api from '../../api';
 
 function SolarPlants() {
   const { userId } = useParams();
@@ -16,22 +17,8 @@ function SolarPlants() {
 
   const fetchPlants = async () => {
     try {
-      const token = localStorage.getItem('token');
-      const res = await fetch(`http://localhost:5130/api/SolarPlants/user/${userId}`, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
-
-      if (!res.ok) {
-        const errorText = await res.text();
-        console.error(`Error en la respuesta: ${res.status} ${res.statusText}`);
-        console.error('Detalle del error:', errorText);
-        return;
-      }
-
-      const data = await res.json();
-      setPlants(data);
+      const response = await api.get(`/SolarPlants/user/${userId}`);
+      setPlants(response.data);
     } catch (error) {
       console.error('Error en el fetch de plantas:', error);
     }
@@ -54,39 +41,26 @@ function SolarPlants() {
 
   const handleCreate = async () => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5130/api/SolarPlants', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json',
-          'Accept': 'text/plain'
-        },
-        body: JSON.stringify({
-          userId: parseInt(userId),
-          plantName: formData.plantName,
-          capacityKw: parseFloat(formData.capacityKw),
-          installDate: formData.installDate,
-          latitude: parseFloat(formData.latitude),
-          longitude: parseFloat(formData.longitude)
-        })
+      await api.post('/SolarPlants', {
+        userId: parseInt(userId),
+        plantName: formData.plantName,
+        capacityKw: parseFloat(formData.capacityKw),
+        installDate: formData.installDate,
+        latitude: parseFloat(formData.latitude),
+        longitude: parseFloat(formData.longitude)
       });
 
-      if (response.ok) {
-        setShowModal(false);
-        setFormData({
-          plantName: '',
-          capacityKw: '',
-          installDate: '',
-          latitude: '',
-          longitude: ''
-        });
-        fetchPlants();
-      } else {
-        console.error('Error creando planta:', await response.text());
-      }
+      setShowModal(false);
+      setFormData({
+        plantName: '',
+        capacityKw: '',
+        installDate: '',
+        latitude: '',
+        longitude: ''
+      });
+      fetchPlants();
     } catch (error) {
-      console.error('Error en fetch:', error);
+      console.error('Error creando planta:', error.response?.data || error.message);
     }
   };
 

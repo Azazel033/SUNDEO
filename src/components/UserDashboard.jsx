@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api';
 
 function UserDashboard() {
   const [userData, setUserData] = useState(null);
@@ -14,7 +14,7 @@ function UserDashboard() {
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5130/api/Users', {
+      const response = await api.get('http://localhost:5130/api/Users', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUserData(response.data);
@@ -26,7 +26,7 @@ function UserDashboard() {
   const fetchProfile = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('https://api-ejemplo.com/profile', {
+      const response = await api.get('https://api-ejemplo.com/profile', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProfile(response.data);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../../api';
 
 function UsersTable() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ function UsersTable() {
     password: '',
     email: '',
     role: 'user'
-  });  
+  });
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -22,10 +22,7 @@ function UsersTable() {
 
   const fetchUsers = async () => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5130/api/Users', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await api.get('/Users');
       setUsers(response.data);
     } catch (error) {
       console.error('Error al obtener usuarios:', error);
@@ -43,14 +40,12 @@ function UsersTable() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5130/api/Users/register', formData, {
-        headers: { 
-          'Authorization': `Bearer ${token}`,
+      await api.post('/Users/register', formData, {
+        headers: {
           'Content-Type': 'application/json'
         }
       });
-      
+
       setShowModal(false);
       setFormData({
         username: '',
@@ -68,10 +63,7 @@ function UsersTable() {
   const handleDeleteUser = async (userId) => {
     if (window.confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
       try {
-        const token = localStorage.getItem('token');
-        await axios.delete(`http://localhost:5130/api/Users/${userId}`, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
+        await api.delete(`/Users/${userId}`);
         fetchUsers();
       } catch (error) {
         console.error('Error al eliminar usuario:', error);
@@ -93,17 +85,17 @@ function UsersTable() {
   };
 
   const filteredAndSortedUsers = [...users]
-    .filter(user => 
-      Object.values(user).some(value => 
+    .filter(user =>
+      Object.values(user).some(value =>
         value?.toString().toLowerCase().includes(filterText.toLowerCase())
       )
     )
     .sort((a, b) => {
       if (!sortConfig.key) return 0;
-      
+
       const aValue = a[sortConfig.key];
       const bValue = b[sortConfig.key];
-      
+
       if (aValue < bValue) {
         return sortConfig.direction === 'ascending' ? -1 : 1;
       }
