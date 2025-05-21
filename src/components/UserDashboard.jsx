@@ -1,72 +1,60 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate, Link } from 'react-router-dom';
 import api from '../api';
+import './UserDashboard.css';
+import UserProfile from './user/UserProfile';
+import UserData from './user/UserData';
 
 function UserDashboard() {
-  const [userData, setUserData] = useState(null);
-  const [profile, setProfile] = useState(null);
+  const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchProfile();
+    const storedUsername = localStorage.getItem("username");
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
   }, []);
 
-  const fetchUserData = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const response = await api.get('http://localhost:5130/api/Users', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      setUserData(response.data);
-    } catch (error) {
-      console.error('Error al obtener datos:', error);
-    }
-  };
-
-  const fetchProfile = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const response = await api.get('https://api-ejemplo.com/profile', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      setProfile(response.data);
-    } catch (error) {
-      console.error('Error al obtener perfil:', error);
-    }
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('role');
-    navigate('/');
+    const confirmLogout = window.confirm("¿Estás seguro de que deseas cerrar sesión?");
+    if (confirmLogout) {
+      localStorage.removeItem("username");
+      localStorage.removeItem("token");
+      localStorage.removeItem("role");
+      localStorage.removeItem("userId");
+      navigate('/');
+    }
+  };
+
+  const toggleMenu = () => {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
   };
 
   return (
-    <div className="dashboard">
-      <header>
-        <h1>Panel de Usuario</h1>
-        <button onClick={handleLogout}>Cerrar Sesión</button>
-      </header>
-
-      <nav>
-        <button onClick={fetchUserData}>Consultar Mis Datos</button>
-        <button onClick={fetchProfile}>Ver Perfil</button>
+    <div>
+      <nav className="navbar">
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <ul className="nav-links">
+          <li><Link to="/user-dashboard/perfil">Ver Perfil</Link></li>
+          <li><Link to="/user-dashboard/datos">Consultar Datos</Link></li>
+          <li><a onClick={handleLogout} href="#">Cerrar Sesión</a></li>
+        </ul>
       </nav>
 
-      {profile && (
-        <div className="profile-section">
-          <h2>Mi Perfil</h2>
-          <p>Usuario: {profile.username}</p>
-          <p>Rol: {profile.role}</p>
-        </div>
-      )}
-
-      {userData && (
-        <div className="data-section">
-          <h2>Mis Datos</h2>
-          <pre>{JSON.stringify(userData, null, 2)}</pre>
-        </div>
-      )}
+      <div className="content">
+        <h1>{username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}</h1>
+        
+        <Routes>
+          <Route path="/perfil" element={<UserProfile />} />
+          <Route path="/datos" element={<UserData />} />
+        </Routes>
+      </div>
     </div>
   );
 }
