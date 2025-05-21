@@ -32,10 +32,11 @@ function Login({ setIsAuthenticated }) {
       localStorage.setItem('userId', userId);
       setIsAuthenticated(true);
 
+      // Redirigir al usuario a la ruta correcta según su rol
       if (role === 'admin') {
-        navigate('/admin-dashboard');
+        navigate('/admin-dashboard/usuarios');
       } else {
-        navigate('/user-dashboard');
+        navigate('/user-dashboard/perfil');
       }
     } catch (error) {
       console.error('Error de autenticación:', error);
