@@ -15,12 +15,20 @@
 .content {
   margin-top: 80px;
   padding: 1rem;
+  color: #333;
+}
+
+.content h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
@@ -32,6 +40,10 @@
   text-decoration: none;
   font-size: 18px;
   cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #4a90e2;
 }
 
 .menu-toggle {
@@ -62,5 +74,8 @@
     top: 60px;
     left: 0;
     padding: 10px;
+  }
+  .nav-links.active li {
+    margin: 10px 0;
   }
 }
