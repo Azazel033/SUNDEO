@@ -72,8 +72,8 @@ function UsersTable() {
     }
   };
 
-  const handleInspectUser = (username) => {
-    navigate(`/admin-dashboard/cuenta?username=${username}`);
+  const handleInspectUser = (userId) => {
+    navigate(`/admin-dashboard/cuenta?userId=${userId}`);
   };
 
   const requestSort = (key) => {
@@ -202,7 +202,7 @@ function UsersTable() {
                 <td>{user.role}</td>
                 <td>
                   <div className="action-buttons">
-                    <button className="btn btn-secondary" onClick={() => handleInspectUser(user.username)}>Inspeccionar</button>
+                    <button className="btn btn-secondary" onClick={() => handleInspectUser(user.userId)}>Inspeccionar</button>
                     <button className="btn btn-danger" onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
                   </div>
                 </td>

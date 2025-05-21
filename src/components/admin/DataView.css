@@ -1,0 +1,150 @@
+/* Contenedor principal */
+.data-view-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.data-view-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de tablas */
+.tables-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (min-width: 1024px) {
+  .tables-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Estilos para cada tabla */
+.data-table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; /* Ancho máximo para las tablas */
+  margin: 0 auto;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.table-header h3 {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 15px;
+}
+
+/* Controles de usuario */
+.user-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-input-group label {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.user-input-group input {
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 6px 10px;
+  width: 80px;
+}
+
+/* Acciones de tabla */
+.table-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Estilos para botones */
+button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #3182ce;
+}
+
+button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* Estilos específicos para botones */
+button[bgcolor="green"] {
+  background-color: #48bb78;
+}
+
+button[bgcolor="green"]:hover {
+  background-color: #38a169;
+}
+
+button[bgcolor="purple"] {
+  background-color: #9f7aea;
+}
+
+button[bgcolor="purple"]:hover {
+  background-color: #805ad5;
+}
+
+/* Estilos para tablas */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f7fafc;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Estilos para el modal (puedes mantener los que ya tenías) */

@@ -29,6 +29,7 @@ function Login({ setIsAuthenticated }) {
       localStorage.setItem('token', token);
       localStorage.setItem('role', role);
       localStorage.setItem('username', username);
+      localStorage.setItem('userId', userId);
       setIsAuthenticated(true);
 
       if (role === 'admin') {

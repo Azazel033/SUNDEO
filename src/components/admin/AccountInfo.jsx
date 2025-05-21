@@ -1,24 +1,25 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../../api';
+const axios = api;
 import './AccountInfo.css';
 
 
 function AccountInfo() {
   const [userData, setUserData] = useState(null);
   const [searchParams] = useSearchParams();
-  const username = searchParams.get('username');
+  const userId = searchParams.get('userId');
   const navigate = useNavigate();
 
   useEffect(() => {
     fetchUserData();
-  }, [username]);
+  }, [userId]);
 
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('token');
-      const userToFetch = username || localStorage.getItem('username');
-      const response = await axios.get(`http://localhost:5130/api/Users/username/${userToFetch}`, {
+      const userToFetch = userId || localStorage.getItem('userId');
+      const response = await axios.get(`Users/${userToFetch}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       console.log('User data:', response.data); // Para depuración

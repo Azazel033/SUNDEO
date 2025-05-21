@@ -7,6 +7,26 @@
   padding: 10px;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #000000, #2c2c2c); /* De negro a gris oscuro */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.content {
+  margin-top: 80px; /* ajusta según la altura real de tu navbar */
+  padding: 1rem;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
