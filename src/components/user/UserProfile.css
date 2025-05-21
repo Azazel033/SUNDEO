@@ -1,0 +1,31 @@
+.account-info-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.account-details {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.info-group {
+  margin-bottom: 20px;
+}
+
+.info-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.info-group p {
+  margin: 0;
+  padding: 8px 0;
+  color: #333;
+  font-size: 1.1em;
+}
