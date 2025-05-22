@@ -167,7 +167,7 @@ function UsersTable() {
         </div>
       )}
 
-      <input
+<input
         type="text"
         placeholder="Filtrar usuarios..."
         value={filterText}
@@ -200,11 +200,12 @@ function UsersTable() {
                 <td>{user.email}</td>
                 <td>{new Date(user.createdAt).toLocaleDateString()}</td>
                 <td>{user.role}</td>
-                <td>
-                  <div className="action-buttons">
+                <td><center>
+                  <div className="tacion-buttons">
                     <button className="btn btn-secondary" onClick={() => handleInspectUser(user.userId)}>Inspeccionar</button>
                     <button className="btn btn-danger" onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
                   </div>
+                  </center>
                 </td>
               </tr>
             ))}

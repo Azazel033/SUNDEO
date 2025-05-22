@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useNavigate, Link, Outlet } from 'react-router-dom';
-import './AdminDashboard.css';
 import UsersTable from './admin/UsersTable';
 import AccountInfo from './admin/AccountInfo';
 import DataView from './admin/DataView';
@@ -36,6 +35,8 @@ const AdminDashboard = () => {
   return (
     <div>
       <nav className="navbar">
+        <img src="./assets/icono.svg" alt="Icono" style={{ height: "40px", marginRight: "16px" }} />
+
         <div className="menu-toggle" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -49,7 +50,7 @@ const AdminDashboard = () => {
       </nav>
 
       <div className="content">
-        <h1>{username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}</h1>
+        <center><h1>{username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}</h1></center>
         
         <Routes>
           <Route path="/cuenta" element={<AccountInfo />} />

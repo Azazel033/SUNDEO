@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate, Link } from 'react-router-dom';
 import api from '../api';
-import './UserDashboard.css';
 import UserProfile from './user/UserProfile';
 import UserData from './user/UserData';
 

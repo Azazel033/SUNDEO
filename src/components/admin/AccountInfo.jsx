@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import api from '../../api';
 const axios = api;
-import './AccountInfo.css';
 
 
 function AccountInfo() {
@@ -42,6 +41,7 @@ function AccountInfo() {
   }
 
   return (
+    <center>
     <div className="account-info-container">
       <h2>Información de la Cuenta</h2>
       <div className="account-details">
@@ -65,7 +65,7 @@ function AccountInfo() {
           <div className="info-group">
             <button 
               onClick={handleViewSolarPlants}
-              className="solar-plants-button"
+              className="btn btn-primary"
             >
               Info Plantas Solares
             </button>
@@ -73,6 +73,7 @@ function AccountInfo() {
         )}
       </div>
     </div>
+    </center>
   );
 }
 

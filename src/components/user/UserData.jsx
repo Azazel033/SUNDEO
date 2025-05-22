@@ -4,7 +4,6 @@ import Plot from 'react-plotly.js';
 import Papa from 'papaparse';
 import { saveAs } from 'file-saver';
 import html2canvas from 'html2canvas';
-import './UserData.css';
 
 function UserData() {
   const [dailyTotals, setDailyTotals] = useState([]);
