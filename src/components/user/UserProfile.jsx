@@ -24,6 +24,7 @@ function UserProfile() {
 
   return (
     <div className="account-info-container">
+      <center>
       <h2>Mi Perfil</h2>
       <div className="account-details">
         <div className="info-group">
@@ -43,6 +44,7 @@ function UserProfile() {
           <p>{new Date(userData.createdAt).toLocaleDateString()}</p>
         </div>
       </div>
+      </center>
     </div>
   );
 }

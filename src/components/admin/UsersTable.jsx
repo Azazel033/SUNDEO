@@ -107,7 +107,7 @@ function UsersTable() {
 
   return (
     <div className="users-table-container">
-      <h2>Gestión de Usuarios</h2>
+      <h2 style={{ color: 'white' }}> Gestión de Usuarios</h2>
       <button className="btn btn-primary" onClick={() => setShowModal(true)}>Agregar Usuario</button>
 
       {showModal && (

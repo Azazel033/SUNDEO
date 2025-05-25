@@ -35,7 +35,7 @@ const AdminDashboard = () => {
   return (
     <div>
       <nav className="navbar">
-        <img src="/images/icono.svg" alt="Icono" style={{ height: "60px", marginRight: "16px" }} />
+        <img src="/images/icono.svg" alt="Icono" style={{ height: "50px", marginRight: "16px" }} />
 
         <div className="menu-toggle" onClick={toggleMenu}>
           <span className="bar"></span>

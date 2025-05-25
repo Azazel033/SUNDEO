@@ -66,7 +66,7 @@ function SolarPlants() {
 
   return (
     <div className="users-table-container">
-      <h2>Plantas del usuario {userId}</h2>
+      <h2 style={{ color: 'white' }}> Plantas del usuario {userId}</h2>
       <button className="btn btn-primary" onClick={() => setShowModal(true)}>Agregar Planta</button>
 
       {showModal && (

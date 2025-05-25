@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate, Link } from 'react-router-dom';
 import api from '../api';
 import UserProfile from './user/UserProfile';
 import UserData from './user/UserData';
+import { color } from 'chart.js/helpers';
 
 function UserDashboard() {
   const [username, setUsername] = useState("");
@@ -34,6 +35,9 @@ function UserDashboard() {
   return (
     <div>
       <nav className="navbar">
+        <img src="/images/icono.svg" alt="Icono" style={{ height: "50px", marginRight: "16px" }} />
+
+
         <div className="menu-toggle" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -47,8 +51,12 @@ function UserDashboard() {
       </nav>
 
       <div className="content">
-        <h1>{username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}</h1>
-        
+        <h1 style={{ color: 'white' }}>
+  {username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}
+</h1>
+
+
+
         <Routes>
           <Route path="/perfil" element={<UserProfile />} />
           <Route path="/datos" element={<UserData />} />

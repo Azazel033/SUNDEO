@@ -6,7 +6,7 @@ function Home() {
 
       {/* Navbar con solo el icono */}
       <nav className="navbar">
-        <img src="/images/icono.svg" alt="Icono" style={{ height: "60px", marginRight: "16px" }} />
+        <img src="/images/icono.svg" alt="Icono" style={{ height: "50px", marginRight: "16px" }} />
       </nav>
 
       {/* Contenedor centrado */}

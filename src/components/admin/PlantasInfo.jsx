@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
+
+
 function PlantasInfo() {
   const { plantId } = useParams();
   const [inverters, setInverters] = useState([]);
@@ -309,12 +311,12 @@ function PlantasInfo() {
 
   return (
     <div className="users-table-container">
-      <h2>Información de la Planta {plantId}</h2>
+      <h2 style={{ color: 'white' }}> Información de la Planta {plantId}</h2>
 
       {/* --- Sección Producción de Energía --- */}
       <div className="users-table-container">
         <div className="section-header">
-          <h3>Producción de Energía</h3>
+          <h3 style={{ color: 'white' }}> Producción de Energía</h3>
           <button className="btn btn-primary" onClick={() => setShowModalEnergy(true)}>
             Agregar Producción
           </button>
@@ -383,7 +385,7 @@ function PlantasInfo() {
       {/* --- Sección Inversores --- */}
       <div className="users-table-container">
         <div className="section-header">
-          <h3>Inversores</h3>
+          <h3 style={{ color: 'white' }}>Inversores</h3>
           <button className="btn btn-primary" onClick={() => setShowModalInverter(true)}>
             Agregar Inversor
           </button>
@@ -452,7 +454,7 @@ function PlantasInfo() {
       {/* --- Sección Paneles Solares --- */}
       <div className="users-table-container">
         <div className="section-header">
-          <h3>Paneles Solares</h3>
+          <h3 style={{ color: 'white' }}>Paneles Solares</h3>
           <button className="btn btn-primary" onClick={() => setShowModalPanel(true)}>
             Agregar Panel Solar
           </button>
@@ -521,7 +523,7 @@ function PlantasInfo() {
       {/* --- Sección Baterías --- */}
       <div className="users-table-container">
         <div className="section-header">
-          <h3>Baterías</h3>
+          <h3 style={{ color: 'white' }}>Baterías</h3>
           <button className="btn btn-primary" onClick={() => setShowModalBattery(true)}>
             Agregar Batería
           </button>
