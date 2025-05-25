@@ -73,12 +73,12 @@ function DataView() {
   };
 
   const chartData = {
-    type: 'bar3d',  // Cambiar a barras 3D
-    x: selectedData.map(d => d.date),  // Usar fechas como etiquetas en X
-    y: selectedData.map(d => d.totalEnergy),  // Producción de energía en Y
-    z: Array(selectedData.length).fill(0),  // Agregar una capa Z que mantenga la base
+    type: 'bar3d',
+    x: selectedData.map(d => d.date),
+    y: selectedData.map(d => d.totalEnergy),
+    z: Array(selectedData.length).fill(0),
     marker: { color: 'rgb(75, 192, 192)', opacity: 0.6 },
-    text: selectedData.map(d => `Producción: ${d.totalEnergy} kWh`),  // Agregar texto interactivo
+    text: selectedData.map(d => `Producción: ${d.totalEnergy} kWh`),
     hoverinfo: 'text',
   };
 
@@ -98,12 +98,12 @@ function DataView() {
   };
 
   return (
-    <div className="data-view-container">
+    <div className="users-table-container">
       <h2 className="data-view-title">Consulta de Datos</h2>
 
-      <div className="tables-container">
+      <div className="users-table-container">
         {/* Producción Total Diaria */}
-        <div className="data-table-container">
+        <div className="table-container">
           <div className="table-header">
             <h3>Producción Total Diaria</h3>
             <div className="table-actions">
@@ -142,7 +142,7 @@ function DataView() {
         </div>
 
         {/* Producción por Usuario */}
-        <div className="data-table-container">
+        <div className="table-container">
           <div className="table-header">
             <h3>Producción por Usuario</h3>
             <div className="user-controls">
@@ -218,8 +218,8 @@ function DataView() {
             data={[chartData]}
             layout={chartLayout}
             config={{
-              displayModeBar: true,  // Para habilitar la barra de herramientas con opciones como zoom y rotación
-              scrollZoom: true,      // Habilitar zoom con scroll
+              displayModeBar: true,
+              scrollZoom: true,
             }}
           />
         </div>
