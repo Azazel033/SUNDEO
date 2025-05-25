@@ -1,8 +1,8 @@
-/* ==========================================================================
-   Global Styles - SUNDEO Solar Management System
+/* ==========================================================================  
+   Global Styles - SUNDEO Solar Management System  
    ========================================================================== */
 
-/* Base Styles
+/* Base Styles  
    ========================================================================== */
 
 @font-face {
@@ -44,17 +44,25 @@
   --system-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+/* Ajustes globales para evitar scroll innecesario */
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* evitar scroll horizontal */
+}
+
+body {
   font-family: var(--system-font);
   line-height: 1.5;
   color: var(--text-primary);
   background-color: var(--background-color);
   min-width: 320px;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Navigation
+/* Navigation  
    ========================================================================== */
 .navbar {
   font-family: var(--main-font);
@@ -63,15 +71,13 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 10px;
+  padding: 12px 24px; /* Ajustado para tener altura fija */
   background: linear-gradient(to left, #094B84 30%, #EABD05 100%);
   box-shadow: var(--shadow-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #55b1e2;
-  padding-left: 16px; /* Margen izquierdo */
-  padding-right: 16px; /* Margen derecho */
 }
 
 .navbar img {
@@ -94,6 +100,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 .nav-links a:hover {
@@ -132,18 +139,23 @@ body {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
   }
 }
 
-/* Content Layout
+/* Content Layout  
    ========================================================================== */
 .content {
-  margin-top: 80px;
+  margin-top: 64px; /* Ajustado para compensar altura navbar */
+  min-height: calc(100vh - 64px);
   padding: var(--spacing-md);
+  box-sizing: border-box;
 }
 
-/* Users Table Specific Styles
+/* Users Table Specific Styles  
    ========================================================================== */
 .users-table-container {
   max-width: 80%;
@@ -162,7 +174,7 @@ body {
   margin: var(--spacing-md) auto;
 }
 
-/* Tables
+/* Tables  
    ========================================================================== */
 .table-container {
   background: white;
@@ -197,7 +209,7 @@ tr:hover {
   background-color: #f8f9fa;
 }
 
-/* Forms
+/* Forms  
    ========================================================================== */
 .form-container {
   max-width: 500px;
@@ -234,7 +246,7 @@ input:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
-/* Buttons
+/* Buttons  
    ========================================================================== */
 button {
   margin: 4px;
@@ -265,7 +277,7 @@ button {
   color: white;
 }
 
-/* Modals
+/* Modals  
    ========================================================================== */
 .modal-overlay {
   position: fixed;
@@ -289,7 +301,7 @@ button {
   max-width: 500px;
 }
 
-/* Messages
+/* Messages  
    ========================================================================== */
 .error-message {
   color: var(--danger-color);
@@ -300,7 +312,7 @@ button {
   margin-bottom: var(--spacing-md);
 }
 
-/* Action Buttons
+/* Action Buttons  
    ========================================================================== */
 .action-buttons {
   display: flex;
@@ -309,7 +321,7 @@ button {
   margin-top: var(--spacing-md);
 }
 
-/* Home Page
+/* Home Page  
    ========================================================================== */
 .home-container {
   max-width: 800px;
@@ -343,7 +355,7 @@ button {
   margin-bottom: 2rem;
 }
 
-/* Account Info Page
+/* Account Info Page  
    ========================================================================== */
 .account-info-container {
   max-width: 600px;
@@ -388,7 +400,7 @@ button {
   border-radius: var(--border-radius-md);
 }
 
-/* Responsive Design
+/* Responsive Design  
    ========================================================================== */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -435,5 +447,9 @@ button {
 
   .users-table-container .filter-input {
     max-width: 100%;
+  }
+
+  .sundeo-font {
+    font-family: 'SUNDEO_font', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }

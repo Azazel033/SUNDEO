@@ -43,23 +43,13 @@ const AdminDashboard = () => {
           <span className="bar"></span>
         </div>
         <ul className="nav-links">
-          <li><Link to="/admin-dashboard/usuarios">Editar/Agregar Usuarios</Link></li>
+          <li><Link to="/admin-dashboard/usuarios">Gestion Usuarios</Link></li>
           <li><Link to="/admin-dashboard/datos">Consultar Datos</Link></li>
           <li><a onClick={handleLogout} href="#">Cerrar Sesión</a></li>
         </ul>
       </nav>
 
       <div className="content">
-        <center><h1>{username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}</h1></center>
-        
-        <Routes>
-          <Route path="/cuenta" element={<AccountInfo />} />
-          <Route path="/usuarios" element={<UsersTable />} />
-          <Route path="/datos" element={<DataView />} />
-          {/* <Route path="/plantas/:userId" element={<SolarPlants />} /> */}
-          {/* <Route path="/plant-info/:plantId" element={<PlantasInfo />} /> */}
-
-        </Routes>
         <Outlet />
       </div>
     </div>

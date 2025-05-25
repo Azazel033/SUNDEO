@@ -36,7 +36,7 @@ function SolarPlants() {
   };
 
   const handleViewDevices = (plantId) => {
-    navigate(`/plant-info/${plantId}`);
+    navigate(`/admin-dashboard/plant-info/${plantId}`);
   };
 
   const handleCreate = async () => {

@@ -308,74 +308,280 @@ function PlantasInfo() {
   };
 
   return (
-    <div className="plant-info-container">
+    <div className="users-table-container">
       <h2>Información de la Planta {plantId}</h2>
 
       {/* --- Sección Producción de Energía --- */}
-      <div className="section-header">
-        <h3>Producción de Energía</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalEnergy(true)}>
-          Agregar Producción
-        </button>
-      </div>
-      <div className="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Fecha</th>
-              <th>Energía (kWh)</th>
-              <th>Voltaje DC</th>
-              <th>Voltaje AC</th>
-              <th>Temperatura</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {energyProductions.length > 0 ? (
-              energyProductions.map((prod) => (
-                <tr key={prod.productionId}>
-                  <td>{prod.productionId}</td>
-                  <td>{new Date(prod.timestamp).toLocaleString()}</td>
-                  <td>{prod.energyKwh} kWh</td>
-                  <td>{prod.dcVoltage} V</td>
-                  <td>{prod.acVoltage} V</td>
-                  <td>{prod.temperature} °C</td>
-                  <td>
-                    <div className="action-buttons">
-                      <button
-                        className="btn btn-secondary"
-                        onClick={() => {
-                          setEditingId(prod.productionId);
-                          setFormEnergy({
-                            timestamp: prod.timestamp.split('.')[0], // Ajustar formato fecha
-                            energyKwh: prod.energyKwh,
-                            dcVoltage: prod.dcVoltage,
-                            acVoltage: prod.acVoltage,
-                            temperature: prod.temperature
-                          });
-                          setShowModalEnergy(true);
-                        }}
-                      >
-                        Editar
-                      </button>
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => handleDelete('EnergyProduction', prod.productionId)}
-                      >
-                        Eliminar
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            ) : (
+      <div className="users-table-container">
+        <div className="section-header">
+          <h3>Producción de Energía</h3>
+          <button className="btn btn-primary" onClick={() => setShowModalEnergy(true)}>
+            Agregar Producción
+          </button>
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
               <tr>
-                <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Energía (kWh)</th>
+                <th>Voltaje DC</th>
+                <th>Voltaje AC</th>
+                <th>Temperatura</th>
+                <th>Acciones</th>
               </tr>
-            )}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {energyProductions.length > 0 ? (
+                energyProductions.map((prod) => (
+                  <tr key={prod.productionId}>
+                    <td>{prod.productionId}</td>
+                    <td>{new Date(prod.timestamp).toLocaleString()}</td>
+                    <td>{prod.energyKwh} kWh</td>
+                    <td>{prod.dcVoltage} V</td>
+                    <td>{prod.acVoltage} V</td>
+                    <td>{prod.temperature} °C</td>
+                    <td>
+                      <div className="action-buttons">
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() => {
+                            setEditingId(prod.productionId);
+                            setFormEnergy({
+                              timestamp: prod.timestamp.split('.')[0],
+                              energyKwh: prod.energyKwh,
+                              dcVoltage: prod.dcVoltage,
+                              acVoltage: prod.acVoltage,
+                              temperature: prod.temperature
+                            });
+                            setShowModalEnergy(true);
+                          }}
+                        >
+                          Editar
+                        </button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleDelete('EnergyProduction', prod.productionId)}
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* --- Sección Inversores --- */}
+      <div className="users-table-container">
+        <div className="section-header">
+          <h3>Inversores</h3>
+          <button className="btn btn-primary" onClick={() => setShowModalInverter(true)}>
+            Agregar Inversor
+          </button>
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Potencia Máx (kW)</th>
+                <th>Eficiencia (%)</th>
+                <th>N° Serie</th>
+                <th>Fecha Instalación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {inverters.length > 0 ? (
+                inverters.map((inv) => (
+                  <tr key={inv.inverterId}>
+                    <td>{inv.inverterId}</td>
+                    <td>{inv.model}</td>
+                    <td>{inv.maxPowerKw} kW</td>
+                    <td>{inv.efficiency} %</td>
+                    <td>{inv.serialNumber}</td>
+                    <td>{new Date(inv.installationDate).toLocaleDateString()}</td>
+                    <td>
+                      <div className="action-buttons">
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() => {
+                            setEditingId(inv.inverterId);
+                            setFormInverter({
+                              model: inv.model,
+                              maxPowerKw: inv.maxPowerKw,
+                              efficiency: inv.efficiency,
+                              serialNumber: inv.serialNumber,
+                              installationDate: inv.installationDate.split('T')[0]
+                            });
+                            setShowModalInverter(true);
+                          }}
+                        >
+                          Editar
+                        </button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleDelete('Inverters', inv.inverterId)}
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* --- Sección Paneles Solares --- */}
+      <div className="users-table-container">
+        <div className="section-header">
+          <h3>Paneles Solares</h3>
+          <button className="btn btn-primary" onClick={() => setShowModalPanel(true)}>
+            Agregar Panel Solar
+          </button>
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Potencia (W)</th>
+                <th>Orientación</th>
+                <th>Ángulo Inclinación</th>
+                <th>Fecha Instalación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {solarPanels.length > 0 ? (
+                solarPanels.map((panel) => (
+                  <tr key={panel.panelId}>
+                    <td>{panel.panelId}</td>
+                    <td>{panel.model}</td>
+                    <td>{panel.powerRatingW} W</td>
+                    <td>{panel.orientation}</td>
+                    <td>{panel.tiltAngle}°</td>
+                    <td>{new Date(panel.installationDate).toLocaleDateString()}</td>
+                    <td>
+                      <div className="action-buttons">
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() => {
+                            setEditingId(panel.panelId);
+                            setFormPanel({
+                              model: panel.model,
+                              powerRatingW: panel.powerRatingW,
+                              orientation: panel.orientation,
+                              tiltAngle: panel.tiltAngle,
+                              installationDate: panel.installationDate.split('T')[0]
+                            });
+                            setShowModalPanel(true);
+                          }}
+                        >
+                          Editar
+                        </button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleDelete('SolarPanel', panel.panelId)}
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* --- Sección Baterías --- */}
+      <div className="users-table-container">
+        <div className="section-header">
+          <h3>Baterías</h3>
+          <button className="btn btn-primary" onClick={() => setShowModalBattery(true)}>
+            Agregar Batería
+          </button>
+        </div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Capacidad (kWh)</th>
+                <th>Eficiencia (%)</th>
+                <th>Fecha Instalación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {batteries.length > 0 ? (
+                batteries.map((bat) => (
+                  <tr key={bat.batteryId}>
+                    <td>{bat.batteryId}</td>
+                    <td>{bat.model}</td>
+                    <td>{bat.capacityKwh} kWh</td>
+                    <td>{bat.efficiency} %</td>
+                    <td>{new Date(bat.installationDate).toLocaleDateString()}</td>
+                    <td>
+                      <div className="action-buttons">
+                        <button
+                          className="btn btn-secondary"
+                          onClick={() => {
+                            setEditingId(bat.batteryId);
+                            setFormBattery({
+                              model: bat.model,
+                              capacityKwh: bat.capacityKwh,
+                              efficiency: bat.efficiency,
+                              installationDate: bat.installationDate.split('T')[0]
+                            });
+                            setShowModalBattery(true);
+                          }}
+                        >
+                          Editar
+                        </button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={() => handleDelete('Battery', bat.batteryId)}
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="6" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       {/* Modal Producción de Energía */}
@@ -407,7 +613,7 @@ function PlantasInfo() {
                   name="energyKwh"
                   step="0.01"
                   min="0"
-                  value={formEnergy.energyKwh}
+                  value={form.Energy.energyKwh}
                   onChange={handleInputChange(setFormEnergy)}
                   required
                 />
@@ -467,73 +673,6 @@ function PlantasInfo() {
           </div>
         </div>
       )}
-
-      {/* --- Sección Inversores --- */}
-      <div className="section-header">
-        <h3>Inversores</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalInverter(true)}>
-          Agregar Inversor
-        </button>
-      </div>
-      <div className="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Modelo</th>
-              <th>Potencia Máx (kW)</th>
-              <th>Eficiencia (%)</th>
-              <th>N° Serie</th>
-              <th>Fecha Instalación</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {inverters.length > 0 ? (
-              inverters.map((inv) => (
-                <tr key={inv.inverterId}>
-                  <td>{inv.inverterId}</td>
-                  <td>{inv.model}</td>
-                  <td>{inv.maxPowerKw} kW</td>
-                  <td>{inv.efficiency} %</td>
-                  <td>{inv.serialNumber}</td>
-                  <td>{new Date(inv.installationDate).toLocaleDateString()}</td>
-                  <td>
-                    <div className="action-buttons">
-                      <button
-                        className="btn btn-secondary"
-                        onClick={() => {
-                          setEditingId(inv.inverterId);
-                          setFormInverter({
-                            model: inv.model,
-                            maxPowerKw: inv.maxPowerKw,
-                            efficiency: inv.efficiency,
-                            serialNumber: inv.serialNumber,
-                            installationDate: inv.installationDate.split('T')[0]
-                          });
-                          setShowModalInverter(true);
-                        }}
-                      >
-                        Editar
-                      </button>
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => handleDelete('Inverters', inv.inverterId)}
-                      >
-                        Eliminar
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
 
       {/* Modal Inversores */}
       {showModalInverter && (
@@ -623,73 +762,6 @@ function PlantasInfo() {
         </div>
       )}
 
-      {/* --- Sección Paneles Solares --- */}
-      <div className="section-header">
-        <h3>Paneles Solares</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalPanel(true)}>
-          Agregar Panel Solar
-        </button>
-      </div>
-      <div className="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Modelo</th>
-              <th>Potencia (W)</th>
-              <th>Orientación</th>
-              <th>Ángulo Inclinación</th>
-              <th>Fecha Instalación</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {solarPanels.length > 0 ? (
-              solarPanels.map((panel) => (
-                <tr key={panel.panelId}>
-                  <td>{panel.panelId}</td>
-                  <td>{panel.model}</td>
-                  <td>{panel.powerRatingW} W</td>
-                  <td>{panel.orientation}</td>
-                  <td>{panel.tiltAngle}°</td>
-                  <td>{new Date(panel.installationDate).toLocaleDateString()}</td>
-                  <td>
-                    <div className="action-buttons">
-                      <button
-                        className="btn btn-secondary"
-                        onClick={() => {
-                          setEditingId(panel.panelId);
-                          setFormPanel({
-                            model: panel.model,
-                            powerRatingW: panel.powerRatingW,
-                            orientation: panel.orientation,
-                            tiltAngle: panel.tiltAngle,
-                            installationDate: panel.installationDate.split('T')[0]
-                          });
-                          setShowModalPanel(true);
-                        }}
-                      >
-                        Editar
-                      </button>
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => handleDelete('SolarPanel', panel.panelId)}
-                      >
-                        Eliminar
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan="7" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
-
       {/* Modal Paneles Solares */}
       {showModalPanel && (
         <div className="modal-overlay">
@@ -775,70 +847,6 @@ function PlantasInfo() {
           </div>
         </div>
       )}
-
-      {/* --- Sección Baterías --- */}
-      <div className="section-header">
-        <h3>Baterías</h3>
-        <button className="btn btn-primary" onClick={() => setShowModalBattery(true)}>
-          Agregar Batería
-        </button>
-      </div>
-      <div className="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Modelo</th>
-              <th>Capacidad (kWh)</th>
-              <th>Eficiencia (%)</th>
-              <th>Fecha Instalación</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {batteries.length > 0 ? (
-              batteries.map((bat) => (
-                <tr key={bat.batteryId}>
-                  <td>{bat.batteryId}</td>
-                  <td>{bat.model}</td>
-                  <td>{bat.capacityKwh} kWh</td>
-                  <td>{bat.efficiency} %</td>
-                  <td>{new Date(bat.installationDate).toLocaleDateString()}</td>
-                  <td>
-                    <div className="action-buttons">
-                      <button
-                        className="btn btn-secondary"
-                        onClick={() => {
-                          setEditingId(bat.batteryId);
-                          setFormBattery({
-                            model: bat.model,
-                            capacityKwh: bat.capacityKwh,
-                            efficiency: bat.efficiency,
-                            installationDate: bat.installationDate.split('T')[0]
-                          });
-                          setShowModalBattery(true);
-                        }}
-                      >
-                        Editar
-                      </button>
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => handleDelete('Battery', bat.batteryId)}
-                      >
-                        Eliminar
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan="6" style={{ textAlign: 'center' }}>No hay datos disponibles</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
 
       {/* Modal Baterías */}
       {showModalBattery && (

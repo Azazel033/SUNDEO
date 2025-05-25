@@ -53,17 +53,11 @@ function Login({ setIsAuthenticated }) {
       margin: '0',
       padding: '0',
     }}>
-      {/* Escena 3D como fondo */}
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',  // Ocupa todo el alto de la pantalla también
-        zIndex: 0, // Canvas ahora está al fondo
-      }}>
-        <Solar3DScene />
-      </div>
+      {/* Navbar con solo el icono */}
+      <nav className="navbar">
+        <img src="/images/icono.svg" alt="Icono" style={{ height: "60px", marginRight: "16px" }} />
+      </nav>
+
 
       {/* Formulario de inicio de sesión */}
       <div style={{
