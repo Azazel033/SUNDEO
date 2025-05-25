@@ -613,7 +613,7 @@ function PlantasInfo() {
                   name="energyKwh"
                   step="0.01"
                   min="0"
-                  value={form.Energy.energyKwh}
+                  value={formEnergy.energyKwh}
                   onChange={handleInputChange(setFormEnergy)}
                   required
                 />
