@@ -208,16 +208,6 @@ function UserData() {
           border-collapse: collapse;
         }
 
-        .data-table th {
-          background: #f1f5f9;
-          padding: 0.75rem 1rem;
-          text-align: left;
-          font-weight: 600;
-          color: #334155;
-          position: sticky;
-          top: 0;
-        }
-
         .data-table td {
           padding: 0.75rem 1rem;
           border-bottom: 1px solid #e2e8f0;

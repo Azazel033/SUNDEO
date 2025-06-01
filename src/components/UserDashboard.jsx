@@ -4,6 +4,7 @@ import api from '../api';
 import UserProfile from './user/UserProfile';
 import UserData from './user/UserData';
 import { color } from 'chart.js/helpers';
+import { Outlet } from 'react-router-dom';
 
 function UserDashboard() {
   const [username, setUsername] = useState("");
@@ -35,7 +36,27 @@ function UserDashboard() {
   return (
     <div>
       <nav className="navbar">
-        <img src="/images/icono.svg" alt="Icono" style={{ height: "50px", marginRight: "16px" }} />
+        {/* Contenedor para el ícono y el botón de retroceso */}
+        <div className="navbar-left">
+          <img 
+            src="/images/icono.svg" 
+            alt="Icono" 
+            style={{ height: "50px", marginRight: "16px", verticalAlign: 'middle' }} 
+          />
+          <button 
+            onClick={() => navigate(-1)} 
+            className="btn btn-secondary"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              padding: '10px 16px',
+              margin: '0',
+              fontSize: '14px'
+            }}
+          >
+            <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Volver
+          </button>
+        </div>
 
 
         <div className="menu-toggle" onClick={toggleMenu}>
@@ -44,7 +65,8 @@ function UserDashboard() {
           <span className="bar"></span>
         </div>
         <ul className="nav-links">
-          <li><Link to="/user-dashboard/perfil">Ver Perfil</Link></li>
+          <li><Link to="/user-dashboard/perfil">Mi Perfil</Link></li>
+          <li><Link to={`/user-dashboard/plantas/${localStorage.getItem("userId")}`}>Mis Plantas</Link></li>
           <li><Link to="/user-dashboard/datos">Consultar Datos</Link></li>
           <li><a onClick={handleLogout} href="#">Cerrar Sesión</a></li>
         </ul>
@@ -52,15 +74,10 @@ function UserDashboard() {
 
       <div className="content">
         <h1 style={{ color: 'white' }}>
-  {username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}
-</h1>
+          {username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}
+        </h1>
 
-
-
-        <Routes>
-          <Route path="/perfil" element={<UserProfile />} />
-          <Route path="/datos" element={<UserData />} />
-        </Routes>
+        <Outlet />
       </div>
     </div>
   );

@@ -35,8 +35,27 @@ const AdminDashboard = () => {
   return (
     <div>
       <nav className="navbar">
-        <img src="/images/icono.svg" alt="Icono" style={{ height: "50px", marginRight: "16px" }} />
-
+       {/* Contenedor para el ícono y el botón de retroceso */}
+        <div className="navbar-left">
+          <img 
+            src="/images/icono.svg" 
+            alt="Icono" 
+            style={{ height: "50px", marginRight: "16px", verticalAlign: 'middle' }} 
+          />
+          <button 
+            onClick={() => navigate(-1)} 
+            className="btn btn-secondary"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              padding: '10px 16px',
+              margin: '0',
+              fontSize: '14px'
+            }}
+          >
+            <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Volver
+          </button>
+        </div>
         <div className="menu-toggle" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>

@@ -55,7 +55,27 @@ function Login({ setIsAuthenticated }) {
     }}>
       {/* Navbar con solo el icono */}
       <nav className="navbar">
-        <img src="/images/icono.svg" alt="Icono" style={{ height: "50px", marginRight: "16px" }} />
+        {/* Contenedor para el ícono y el botón de retroceso */}
+        <div className="navbar-left">
+          <img 
+            src="/images/icono.svg" 
+            alt="Icono" 
+            style={{ height: "50px", marginRight: "16px", verticalAlign: 'middle' }} 
+          />
+          <button 
+            onClick={() => navigate(-1)} 
+            className="btn btn-secondary"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              padding: '10px 16px',
+              margin: '0',
+              fontSize: '14px'
+            }}
+          >
+            <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Volver
+          </button>
+        </div>
       </nav>
 
 
@@ -69,7 +89,7 @@ function Login({ setIsAuthenticated }) {
         maxWidth: '500px',  // Máximo ancho del formulario
         zIndex: 1,  // Formulario en el frente
         background: 'rgba(255, 255, 255, 0.9)',
-        padding: '2rem',
+        padding: '2rem 3rem 2rem 2rem',
         borderRadius: '8px',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       }}>
@@ -108,13 +128,6 @@ function Login({ setIsAuthenticated }) {
               type="text"
               value={credentials.username}
               onChange={(e) => setCredentials(prev => ({ ...prev, username: e.target.value }))}
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #ddd',
-                borderRadius: '4px',
-                fontSize: '1rem'
-              }}
               required
             />
           </div>
@@ -132,13 +145,6 @@ function Login({ setIsAuthenticated }) {
               type="password"
               value={credentials.password}
               onChange={(e) => setCredentials(prev => ({ ...prev, password: e.target.value }))}
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #ddd',
-                borderRadius: '4px',
-                fontSize: '1rem'
-              }}
               required
             />
           </div>

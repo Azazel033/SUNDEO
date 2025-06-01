@@ -39,6 +39,12 @@ function UsersTable() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (formData.password.length < 6) {
+      setError('La contraseña debe tener al menos 6 caracteres.');
+      return;
+    }
+
     try {
       await api.post('/Users/register', formData, {
         headers: {
@@ -47,6 +53,7 @@ function UsersTable() {
       });
 
       setShowModal(false);
+      setError('');
       setFormData({
         username: '',
         password: '',
@@ -107,7 +114,7 @@ function UsersTable() {
 
   return (
     <div className="users-table-container">
-      <h2 style={{ color: 'white' }}> Gestión de Usuarios</h2>
+      <h2 style={{ color: 'white' }}>Gestión de Usuarios</h2>
       <button className="btn btn-primary" onClick={() => setShowModal(true)}>Agregar Usuario</button>
 
       {showModal && (
@@ -167,13 +174,14 @@ function UsersTable() {
         </div>
       )}
 
-<input
+      <input
         type="text"
         placeholder="Filtrar usuarios..."
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
         className="filter-input"
       />
+
       <div className="table-container">
         <table>
           <thead>
@@ -200,11 +208,12 @@ function UsersTable() {
                 <td>{user.email}</td>
                 <td>{new Date(user.createdAt).toLocaleDateString()}</td>
                 <td>{user.role}</td>
-                <td><center>
-                  <div className="tacion-buttons">
-                    <button className="btn btn-secondary" onClick={() => handleInspectUser(user.userId)}>Inspeccionar</button>
-                    <button className="btn btn-danger" onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
-                  </div>
+                <td>
+                  <center>
+                    <div className="tacion-buttons">
+                      <button className="btn btn-secondary" onClick={() => handleInspectUser(user.userId)}>Inspeccionar</button>
+                      <button className="btn btn-danger" onClick={() => handleDeleteUser(user.userId)}>Eliminar</button>
+                    </div>
                   </center>
                 </td>
               </tr>

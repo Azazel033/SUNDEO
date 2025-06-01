@@ -10,6 +10,10 @@ import AccountInfo from './components/admin/AccountInfo';
 import UsersTable from './components/admin/UsersTable';
 import DataView from './components/admin/DataView';
 import { Solar3DScene } from './components/Solar3DScene';
+import SolarPlantsUser from './components/user/SolarPlantsUser';
+import UserProfile from './components/user/UserProfile';
+import UserData from './components/user/UserData';
+import PlantasInfoUser from './components/user/PlantasInfoUser';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -18,13 +22,8 @@ function App() {
     const token = localStorage.getItem('token');
     const userRole = localStorage.getItem('role');
 
-    if (!token) {
-      return <Navigate to="/login" />;
-    }
-
-    if (userRole !== allowedRole) {
-      return <Navigate to="/login" />;
-    }
+    if (!token) return <Navigate to="/login" />;
+    if (userRole !== allowedRole) return <Navigate to="/login" />;
 
     return children;
   };
@@ -46,12 +45,13 @@ function App() {
         <Solar3DScene />
       </div>
 
-      {/* Contenido de la aplicación encima del fondo */}
+      {/* Contenido encima del fondo */}
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
 
+          {/* Rutas ADMIN */}
           <Route
             path="/admin-dashboard/*"
             element={
@@ -67,6 +67,7 @@ function App() {
             <Route path="plant-info/:plantId" element={<PlantasInfo />} />
           </Route>
 
+          {/* Rutas USER */}
           <Route
             path="/user-dashboard/*"
             element={
@@ -74,7 +75,12 @@ function App() {
                 <UserDashboard />
               </PrivateRoute>
             }
-          />
+          >
+            <Route path="perfil" element={<UserProfile />} />
+            <Route path="datos" element={<UserData />} />
+            <Route path="plantas/:userId" element={<SolarPlantsUser />} />
+            <Route path="plant-info/:plantId" element={<PlantasInfoUser />} />
+          </Route>
         </Routes>
       </div>
     </Router>

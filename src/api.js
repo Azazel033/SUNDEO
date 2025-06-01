@@ -1,69 +1,103 @@
 // src/api.js
 import axios from 'axios';
-import { jwtDecode } from "jwt-decode"; 
+import { jwtDecode } from "jwt-decode";
 
+// Configuración inicial
 const api = axios.create({
   baseURL: 'http://localhost:5130/api',
   headers: {
-    'Accept': 'text/plain', 
+    'Accept': 'text/plain',
     'Content-Type': 'application/json',
   },
 });
 
-// Interceptor para agregar token y validar si está expirado
+// Variables para control de redirección y cancelación
+let isRedirecting = false;
+const cancelTokenSource = axios.CancelToken.source();
+
+// Función para mostrar notificaciones (reemplaza alert)
+const showNotification = (message) => {
+  // Usa tu sistema de notificaciones preferido (Toast, Snackbar, etc)
+  console.warn(message);
+};
+
+// Interceptor de request
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('token');
+  
   if (token) {
-    // Decodificar el token para verificar su fecha de expiración
     try {
       const decodedToken = jwtDecode(token);
-      const expirationTime = decodedToken.exp * 1000; 
-      const currentTime = Date.now();
+      const expirationTime = decodedToken.exp * 1000;
       
-      if (currentTime >= expirationTime) {
-        // Si el token ha expirado, eliminarlo y redirigir al login
-        localStorage.removeItem('token');
-        alert('Sesión expirada. Por favor, inicia sesión nuevamente.');
+      if (Date.now() >= expirationTime) {
+        if (!isRedirecting) {
+          isRedirecting = true;
+          localStorage.removeItem('token');
+          showNotification('Sesión expirada. Redirigiendo...');
+          
+          // Cancela todas las peticiones pendientes
+          cancelTokenSource.cancel('Token expirado, cancelando peticiones');
+          
+          // Redirige después de breve delay (opcional)
+          setTimeout(() => {
+            window.location.href = '/login';
+          }, 1500);
+        }
+        
+        // Cancela esta petición específica
+        return {
+          ...config,
+          cancelToken: cancelTokenSource.token
+        };
+      }
+      
+      config.headers.Authorization = `Bearer ${token}`;
+    } catch (error) {
+      console.error("Error al decodificar token:", error);
+      localStorage.removeItem('token');
+      if (!isRedirecting) {
+        isRedirecting = true;
+        showNotification('Error de autenticación. Redirigiendo...');
         setTimeout(() => {
           window.location.href = '/login';
         }, 1500);
-      } else {
-        config.headers.Authorization = `Bearer ${token}`; // Agregar token a la cabecera
       }
-    } catch (error) {
-      // Si ocurre algún error al decodificar el token (token mal formado, etc.)
-      console.error("Error al decodificar el token:", error);
-      localStorage.removeItem('token');
-      alert('Token inválido. Por favor, inicia sesión nuevamente.');
-      setTimeout(() => {
-        window.location.href = '/login';
-      }, 1500); 
+      return Promise.reject(error);
     }
   }
+  
   return config;
 });
 
-// Interceptor para manejar errores 401 y 403
+// Interceptor de response
 api.interceptors.response.use(
   response => response,
   error => {
-    // Si la respuesta es 401 o 403, eliminamos el token y redirigimos al login
-    if (error.response?.status === 401) {
-      localStorage.removeItem('token');
-      alert('Sesión expirada. Por favor, inicia sesión nuevamente.');
-      setTimeout(() => {
-        window.location.href = '/login';
-      }, 1500); 
+    if (axios.isCancel(error)) {
+      // No hacer nada si fue cancelación intencional
+      return Promise.reject(error);
     }
-
-    if (error.response?.status === 403) {
-      localStorage.removeItem('token');
-      alert('Permisos inválidos. No tienes acceso a esta sección.');
-      setTimeout(() => {
-        window.location.href = '/login';
-      }, 1500); 
+    
+    if (error.response?.status === 401 || error.response?.status === 403) {
+      if (!isRedirecting) {
+        isRedirecting = true;
+        localStorage.removeItem('token');
+        showNotification(
+          error.response.status === 401 
+            ? 'Sesión expirada' 
+            : 'Acceso no autorizado'
+        );
+        
+        // Cancela peticiones pendientes
+        cancelTokenSource.cancel('Redirección por error de autenticación');
+        
+        setTimeout(() => {
+          window.location.href = '/login';
+        }, 1500);
+      }
     }
-
+    
     return Promise.reject(error);
   }
 );

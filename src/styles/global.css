@@ -8,10 +8,11 @@
 @font-face {
   font-family: 'SUNDEO_font';
   src: url('/fonts/Harabara.woff') format('woff'),
-       url('/fonts/Harabara.woff2') format('woff2');
+    url('/fonts/Harabara.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: swap; /* Para mejor rendimiento */
+  font-display: swap;
+  /* Para mejor rendimiento */
 }
 
 :root {
@@ -45,11 +46,13 @@
 }
 
 /* Ajustes globales para evitar scroll innecesario */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden; /* evitar scroll horizontal */
+  overflow-x: hidden;
+  /* evitar scroll horizontal */
 }
 
 body {
@@ -71,7 +74,8 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 12px 24px; /* Ajustado para tener altura fija */
+  padding: 12px 24px;
+  /* Ajustado para tener altura fija */
   background: linear-gradient(to left, #094B84 30%, #EABD05 100%);
   box-shadow: var(--shadow-md);
   display: flex;
@@ -91,7 +95,7 @@ body {
   padding: 0;
   margin: 0;
   gap: var(--spacing-lg);
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: 100px;
 }
 
@@ -149,7 +153,8 @@ body {
 /* Content Layout  
    ========================================================================== */
 .content {
-  margin-top: 64px; /* Ajustado para compensar altura navbar */
+  margin-top: 64px;
+  /* Ajustado para compensar altura navbar */
   min-height: calc(100vh - 64px);
   padding: var(--spacing-md);
   box-sizing: border-box;
@@ -190,7 +195,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: var(--spacing-md);
   text-align: center;
   border-bottom: 1px solid var(--border-color);
@@ -210,12 +216,17 @@ tr:hover {
 }
 
 .section-header {
-  display: flex;          /* Utiliza Flexbox para la disposición */
-  justify-content: space-between; /* Esto separa los elementos al máximo */
+  display: flex;
+  /* Utiliza Flexbox para la disposición */
+  justify-content: space-between;
+  /* Esto separa los elementos al máximo */
   align-items: center;
-  background-color: rgba(157, 216, 247, 0.8); /* Color #9DD8F7 con transparencia (80%) */
-  border-radius: 12px; /* Bordes suavemente redondeados */
-  padding: 10px; /* Puedes ajustar el padding según lo necesites */
+  background-color: rgba(157, 216, 247, 0.8);
+  /* Color #9DD8F7 con transparencia (80%) */
+  border-radius: 12px;
+  /* Bordes suavemente redondeados */
+  padding: 10px;
+  /* Puedes ajustar el padding según lo necesites */
 }
 
 
@@ -241,16 +252,19 @@ tr:hover {
   font-weight: 500;
 }
 
-input, select {
+input,
+select {
   width: 100%;
   padding: var(--spacing-sm);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-sm);
   font-size: 16px;
   transition: all 0.3s;
+  margin-right: 8px;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
@@ -391,7 +405,7 @@ button {
 .info-group {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .info-group label {
@@ -463,95 +477,167 @@ button {
     font-family: 'SUNDEO_font', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  
-/* Tablas y contenedores */
-.table-container {
-  background: white;
-  border-radius: var(--border-radius-md);
-  box-shadow: var(--shadow-sm);
-  margin: var(--spacing-md) 0;
-  overflow: auto;
-  max-height: 400px;
-}
 
-.data-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+  /* Tablas y contenedores */
+  .table-container {
+    background: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    margin: var(--spacing-md) 0;
+    overflow: auto;
+    max-height: 400px;
+  }
 
-.data-table th, .data-table td {
-  padding: var(--spacing-md);
-  text-align: center;
-  border-bottom: 1px solid var(--border-color);
-  font-size: 16px; /* Tamaño uniforme */
-}
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
-.data-table th {
-  position: sticky;
-  top: 0;
-  background-color: var(--blue-light);
-  font-weight: 600;
-  color: var(--text-primary);
-  z-index: 1;
-}
+  .data-table th,
+  .data-table td {
+    padding: var(--spacing-md);
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+    /* Tamaño uniforme */
+  }
 
-.data-table tr:hover {
-  background-color: #f8f9fa;
-}
+  .data-table th {
+    position: sticky;
+    top: 0;
+    background-color: var(--blue-light);
+    font-weight: 600;
+    color: var(--text-primary);
+    z-index: 1;
+  }
 
-/* Contenedores de tabla */
-.users-table-container {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: var(--spacing-md);
-}
+  .data-table tr:hover {
+    background-color: #f8f9fa;
+  }
 
-.users-table-container .table-container {
-  max-width: 100%;
-  margin: var(--spacing-md) auto;
-}
+  /* Contenedores de tabla */
+  .users-table-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+  }
 
-.table-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--spacing-md);
-}
+  .users-table-container .table-container {
+    max-width: 100%;
+    margin: var(--spacing-md) auto;
+  }
 
-.table-header h3 {
-  font-size: 20px;
-  font-weight: bold;
-}
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+  }
 
-/* Botones */
-.tacion-buttons {
-  display: flex;
-  gap: var(--spacing-sm);
-}
+  .table-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-.btn {
-  margin: 4px;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border: none;
-  border-radius: var(--border-radius-sm);
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  /* Botones */
+  .tacion-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: white;
-}
+  .btn {
+    margin: 4px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-.btn-primary:hover {
-  background-color: var(--primary-dark);
-}
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
 
-.btn-secondary {
-  background-color: var(--secondary-color);
-  color: white;
-}
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+  }
 
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+  }
 
+  table {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .table-container {
+    overflow: hidden;
+  }
+
+  /* Asegura que las tablas tengan desplazamiento pero sin mostrar la barra */
+  .table-container {
+    max-width: 100%;
+    overflow: auto;
+    /* Permite el desplazamiento */
+    margin: var(--spacing-md) 0;
+    position: relative;
+    /* Para asegurar el control de la scrollbar */
+  }
+
+  /* Ocultar la scrollbar */
+  .table-container::-webkit-scrollbar {
+    width: 0;
+    /* Elimina la barra de desplazamiento */
+    height: 0;
+    /* Elimina la barra de desplazamiento horizontal */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* Esto evitará que las tablas se expandan más allá del contenedor */
+  }
+
+  th,
+  td {
+    padding: var(--spacing-md);
+    text-align: center;
+    word-wrap: break-word;
+    /* Asegura que el texto largo se ajuste */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Esto corta el texto que se desborda */
+  }
+
+  th {
+    background-color: var(--blue-light);
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  tr:hover {
+    background-color: #f8f9fa;
+  }
+
+  .data-table th {
+    background-color: #9DD8F7;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #334155;
+    position: sticky;
+    top: 0;
+  }
+
+  .full-width-filter {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 0;
+  }
 }

@@ -213,7 +213,6 @@ function DataView() {
         </div>
       </div>
 
-      {/* Modal con gráfico */}
       <Modal
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
