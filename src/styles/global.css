@@ -65,6 +65,85 @@ body {
   box-sizing: border-box;
 }
 
+/* Añade estos estilos a tu archivo CSS */
+
+.modal-content {
+  /* Asegúrate de que el modal tenga un ancho definido */
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Esto asegura que el padding no afecte el ancho total */
+  font-size: 14px;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 40px; /* Espacio para el ícono del ojo */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  font-size: 18px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.action-buttons button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Estilos para los mensajes de error y éxito */
+.error-message {
+  color: #dc3545;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+.success-message {
+  color: #28a745;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #d4edda;
+  border-radius: 4px;
+}
+
+
+
 /* Navigation  
    ========================================================================== */
 .navbar {
@@ -640,4 +719,9 @@ button {
     box-sizing: border-box;
     margin: 1rem 0;
   }
+
+  .btn-secondary:hover {
+          background-color: #cbd5e1;
+        }
+
 }

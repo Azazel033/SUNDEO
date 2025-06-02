@@ -9,6 +9,7 @@ function Login({ setIsAuthenticated }) {
     username: '',
     password: ''
   });
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
@@ -49,13 +50,11 @@ function Login({ setIsAuthenticated }) {
   return (
     <div style={{
       position: 'relative',
-      height: '100vh',  // Ocupa todo el alto de la pantalla
+      height: '100vh',
       margin: '0',
       padding: '0',
     }}>
-      {/* Navbar con solo el icono */}
       <nav className="navbar">
-        {/* Contenedor para el ícono y el botón de retroceso */}
         <div className="navbar-left">
           <img 
             src="/images/icono.svg" 
@@ -73,21 +72,19 @@ function Login({ setIsAuthenticated }) {
               fontSize: '14px'
             }}
           >
-            <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Volver
+            <i className="fas fa-arrow-left"></i>
           </button>
         </div>
       </nav>
 
-
-      {/* Formulario de inicio de sesión */}
       <div style={{
         position: 'absolute',
-        top: '50%',   // Centrado verticalmente
+        top: '50%',
         left: '50%',
-        transform: 'translate(-50%, -50%)', // Centrado exacto
+        transform: 'translate(-50%, -50%)',
         width: '100%',
-        maxWidth: '500px',  // Máximo ancho del formulario
-        zIndex: 1,  // Formulario en el frente
+        maxWidth: '500px',
+        zIndex: 1,
         background: 'rgba(255, 255, 255, 0.9)',
         padding: '2rem 3rem 2rem 2rem',
         borderRadius: '8px',
@@ -115,6 +112,7 @@ function Login({ setIsAuthenticated }) {
         )}
 
         <form onSubmit={handleSubmit}>
+          {/* Usuario */}
           <div style={{ marginBottom: '1rem' }}>
             <label style={{
               display: 'block',
@@ -124,14 +122,25 @@ function Login({ setIsAuthenticated }) {
             }}>
               Usuario
             </label>
-            <input
-              type="text"
-              value={credentials.username}
-              onChange={(e) => setCredentials(prev => ({ ...prev, username: e.target.value }))}
-              required
-            />
+            <div style={{
+              position: 'relative',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              <input
+                type="text"
+                value={credentials.username}
+                onChange={(e) => setCredentials(prev => ({ ...prev, username: e.target.value }))}
+                required
+                style={{
+                  flex: 1,
+                  paddingRight: '40px'
+                }}
+              />
+            </div>
           </div>
 
+          {/* Contraseña */}
           <div style={{ marginBottom: '1.5rem' }}>
             <label style={{
               display: 'block',
@@ -141,14 +150,42 @@ function Login({ setIsAuthenticated }) {
             }}>
               Contraseña
             </label>
-            <input
-              type="password"
-              value={credentials.password}
-              onChange={(e) => setCredentials(prev => ({ ...prev, password: e.target.value }))}
-              required
-            />
+            <div style={{ 
+              position: 'relative',
+              display: 'flex',
+              alignItems: 'center'
+            }}>
+              <input
+                type={showPassword ? 'text' : 'password'}
+                value={credentials.password}
+                onChange={(e) => setCredentials(prev => ({ ...prev, password: e.target.value }))}
+                required
+                style={{
+                  flex: 1,
+                  paddingRight: '40px'
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(prev => !prev)}
+                style={{
+                  position: 'absolute',
+                  right: '10px',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  color: '#333',
+                  fontSize: '18px',
+                  padding: '0'
+                }}
+                aria-label={showPassword ? 'Ocultar contraseña' : 'Mostrar contraseña'}
+              >
+                <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+              </button>
+            </div>
           </div>
 
+          {/* Botón */}
           <button
             type="submit"
             style={{

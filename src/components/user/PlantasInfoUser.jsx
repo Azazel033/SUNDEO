@@ -317,9 +317,6 @@ function PlantasInfoUser() {
       <div className="users-table-container">
         <div className="section-header">
           <h3 style={{ color: 'white' }}> Producción de Energía</h3>
-          <button className="btn btn-primary" onClick={() => setShowModalEnergy(true)}>
-            Agregar Producción
-          </button>
         </div>
         <div className="table-container">
           <table>
@@ -331,7 +328,6 @@ function PlantasInfoUser() {
                 <th>Voltaje DC</th>
                 <th>Voltaje AC</th>
                 <th>Temperatura</th>
-                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -344,32 +340,6 @@ function PlantasInfoUser() {
                     <td>{prod.dcVoltage} V</td>
                     <td>{prod.acVoltage} V</td>
                     <td>{prod.temperature} °C</td>
-                    <td>
-                      <div className="action-buttons">
-                        <button
-                          className="btn btn-secondary"
-                          onClick={() => {
-                            setEditingId(prod.productionId);
-                            setFormEnergy({
-                              timestamp: prod.timestamp.split('.')[0],
-                              energyKwh: prod.energyKwh,
-                              dcVoltage: prod.dcVoltage,
-                              acVoltage: prod.acVoltage,
-                              temperature: prod.temperature
-                            });
-                            setShowModalEnergy(true);
-                          }}
-                        >
-                          Editar
-                        </button>
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => handleDelete('EnergyProduction', prod.productionId)}
-                        >
-                          Eliminar
-                        </button>
-                      </div>
-                    </td>
                   </tr>
                 ))
               ) : (
@@ -386,9 +356,6 @@ function PlantasInfoUser() {
       <div className="users-table-container">
         <div className="section-header">
           <h3 style={{ color: 'white' }}>Inversores</h3>
-          <button className="btn btn-primary" onClick={() => setShowModalInverter(true)}>
-            Agregar Inversor
-          </button>
         </div>
         <div className="table-container">
           <table>
@@ -400,7 +367,6 @@ function PlantasInfoUser() {
                 <th>Eficiencia (%)</th>
                 <th>N° Serie</th>
                 <th>Fecha Instalación</th>
-                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -413,32 +379,6 @@ function PlantasInfoUser() {
                     <td>{inv.efficiency} %</td>
                     <td>{inv.serialNumber}</td>
                     <td>{new Date(inv.installationDate).toLocaleDateString()}</td>
-                    <td>
-                      <div className="action-buttons">
-                        <button
-                          className="btn btn-secondary"
-                          onClick={() => {
-                            setEditingId(inv.inverterId);
-                            setFormInverter({
-                              model: inv.model,
-                              maxPowerKw: inv.maxPowerKw,
-                              efficiency: inv.efficiency,
-                              serialNumber: inv.serialNumber,
-                              installationDate: inv.installationDate.split('T')[0]
-                            });
-                            setShowModalInverter(true);
-                          }}
-                        >
-                          Editar
-                        </button>
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => handleDelete('Inverters', inv.inverterId)}
-                        >
-                          Eliminar
-                        </button>
-                      </div>
-                    </td>
                   </tr>
                 ))
               ) : (
@@ -455,9 +395,6 @@ function PlantasInfoUser() {
       <div className="users-table-container">
         <div className="section-header">
           <h3 style={{ color: 'white' }}>Paneles Solares</h3>
-          <button className="btn btn-primary" onClick={() => setShowModalPanel(true)}>
-            Agregar Panel Solar
-          </button>
         </div>
         <div className="table-container">
           <table>
@@ -469,7 +406,6 @@ function PlantasInfoUser() {
                 <th>Orientación</th>
                 <th>Ángulo Inclinación</th>
                 <th>Fecha Instalación</th>
-                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -482,32 +418,6 @@ function PlantasInfoUser() {
                     <td>{panel.orientation}</td>
                     <td>{panel.tiltAngle}°</td>
                     <td>{new Date(panel.installationDate).toLocaleDateString()}</td>
-                    <td>
-                      <div className="action-buttons">
-                        <button
-                          className="btn btn-secondary"
-                          onClick={() => {
-                            setEditingId(panel.panelId);
-                            setFormPanel({
-                              model: panel.model,
-                              powerRatingW: panel.powerRatingW,
-                              orientation: panel.orientation,
-                              tiltAngle: panel.tiltAngle,
-                              installationDate: panel.installationDate.split('T')[0]
-                            });
-                            setShowModalPanel(true);
-                          }}
-                        >
-                          Editar
-                        </button>
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => handleDelete('SolarPanel', panel.panelId)}
-                        >
-                          Eliminar
-                        </button>
-                      </div>
-                    </td>
                   </tr>
                 ))
               ) : (
@@ -524,9 +434,6 @@ function PlantasInfoUser() {
       <div className="users-table-container">
         <div className="section-header">
           <h3 style={{ color: 'white' }}>Baterías</h3>
-          <button className="btn btn-primary" onClick={() => setShowModalBattery(true)}>
-            Agregar Batería
-          </button>
         </div>
         <div className="table-container">
           <table>
@@ -537,7 +444,6 @@ function PlantasInfoUser() {
                 <th>Capacidad (kWh)</th>
                 <th>Eficiencia (%)</th>
                 <th>Fecha Instalación</th>
-                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
@@ -549,31 +455,6 @@ function PlantasInfoUser() {
                     <td>{bat.capacityKwh} kWh</td>
                     <td>{bat.efficiency} %</td>
                     <td>{new Date(bat.installationDate).toLocaleDateString()}</td>
-                    <td>
-                      <div className="action-buttons">
-                        <button
-                          className="btn btn-secondary"
-                          onClick={() => {
-                            setEditingId(bat.batteryId);
-                            setFormBattery({
-                              model: bat.model,
-                              capacityKwh: bat.capacityKwh,
-                              efficiency: bat.efficiency,
-                              installationDate: bat.installationDate.split('T')[0]
-                            });
-                            setShowModalBattery(true);
-                          }}
-                        >
-                          Editar
-                        </button>
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => handleDelete('Battery', bat.batteryId)}
-                        >
-                          Eliminar
-                        </button>
-                      </div>
-                    </td>
                   </tr>
                 ))
               ) : (

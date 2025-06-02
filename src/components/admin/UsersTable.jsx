@@ -15,6 +15,7 @@ function UsersTable() {
     role: 'user'
   });
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
     fetchUsers();
@@ -135,13 +136,21 @@ function UsersTable() {
               </div>
               <div className="form-group">
                 <label>Contraseña:</label>
-                <input
-                  type="password"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleInputChange}
-                  required
-                />
+                <div className="password-input-container">
+                  <input
+                    type={showPassword ? 'text' : 'password'}
+                    name="password"
+                    value={formData.password}
+                    onChange={handleInputChange}
+                    required
+                  />
+                  <span
+                    onClick={() => setShowPassword(prev => !prev)}
+                    className="eye-icon"
+                  >
+                    <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                  </span>
+                </div>
               </div>
               <div className="form-group">
                 <label>Email:</label>

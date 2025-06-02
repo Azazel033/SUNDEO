@@ -54,7 +54,7 @@ function UserDashboard() {
               fontSize: '14px'
             }}
           >
-            <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Volver
+            <i className="fas fa-arrow-left"></i> 
           </button>
         </div>
 
@@ -74,7 +74,7 @@ function UserDashboard() {
 
       <div className="content">
         <h1 style={{ color: 'white' }}>
-          {username ? `Bienvenido a SUENDEO ${username}` : "Usuario no encontrado"}
+          {username ? `Bienvenido a SUENDEO ` : "Usuario no encontrado"}
         </h1>
 
         <Outlet />

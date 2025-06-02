@@ -53,7 +53,7 @@ const AdminDashboard = () => {
               fontSize: '14px'
             }}
           >
-            <i className="fas fa-arrow-left" style={{ marginRight: '8px' }}></i> Volver
+            <i className="fas fa-arrow-left"></i>
           </button>
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>

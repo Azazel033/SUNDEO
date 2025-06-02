@@ -26,7 +26,7 @@ function SolarPlantsUser() {
 
   return (
     <div className="users-table-container">
-      <h2 style={{ color: 'white' }}>Plantas del usuario {userId}</h2>
+      <h2 style={{ color: 'white' }}>Mis Platas</h2>
 
       <div className="table-container">
         <table>

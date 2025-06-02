@@ -15,6 +15,7 @@ function AccountInfo() {
     passwordHash: ''
   });
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
     fetchUserData();
@@ -144,12 +145,20 @@ function AccountInfo() {
               </div>
               <div className="form-group">
                 <label>Nueva Contraseña:</label>
-                <input
-                  type="password"
-                  name="passwordHash"
-                  value={formData.passwordHash}
-                  onChange={handleInputChange}
-                />
+                <div className="password-input-container">
+                  <input
+                    type={showPassword ? 'text' : 'password'}
+                    name="passwordHash"
+                    value={formData.passwordHash}
+                    onChange={handleInputChange}
+                  />
+                  <span
+                    onClick={() => setShowPassword(prev => !prev)}
+                    className="eye-icon"
+                  >
+                    <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                  </span>
+                </div>
               </div>
               <div className="action-buttons">
                 <button type="submit" className="btn btn-primary">Guardar Cambios</button>

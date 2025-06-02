@@ -381,11 +381,6 @@ function DataView() {
           background-color: #2563eb;
         }
 
-        .btn-secondary {
-          background-color: #e2e8f0;
-          color: #334155;
-        }
-
         .btn-secondary:hover {
           background-color: #cbd5e1;
         }

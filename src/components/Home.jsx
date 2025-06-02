@@ -32,7 +32,7 @@ function Home() {
         </h1>
 
         <p style={{ color: '#555', marginBottom: '2rem' }}>
-          Plataforma de seguimiento para instalaciones de autoconsumo
+          Plataforma de seguimiento para instalaciones de autoconsumo.
         </p>
         <Link
           to="/login"

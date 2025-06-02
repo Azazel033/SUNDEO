@@ -13,6 +13,9 @@ function UserProfile() {
   });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const [showCurrentPassword, setShowCurrentPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   useEffect(() => {
     fetchUserData();
@@ -140,31 +143,55 @@ function UserProfile() {
                 </div>
                 <div className="form-group">
                   <label>Contraseña Actual:</label>
-                  <input
-                    type="password"
-                    name="currentPassword"
-                    value={formData.currentPassword}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <div className="password-input-container">
+                    <input
+                      type={showCurrentPassword ? 'text' : 'password'}
+                      name="currentPassword"
+                      value={formData.currentPassword}
+                      onChange={handleInputChange}
+                      required
+                    />
+                    <span
+                      onClick={() => setShowCurrentPassword(prev => !prev)}
+                      className="eye-icon"
+                    >
+                      <i className={`fas ${showCurrentPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                    </span>
+                  </div>
                 </div>
                 <div className="form-group">
                   <label>Nueva Contraseña:</label>
-                  <input
-                    type="password"
-                    name="newPassword"
-                    value={formData.newPassword}
-                    onChange={handleInputChange}
-                  />
+                  <div className="password-input-container">
+                    <input
+                      type={showNewPassword ? 'text' : 'password'}
+                      name="newPassword"
+                      value={formData.newPassword}
+                      onChange={handleInputChange}
+                    />
+                    <span
+                      onClick={() => setShowNewPassword(prev => !prev)}
+                      className="eye-icon"
+                    >
+                      <i className={`fas ${showNewPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                    </span>
+                  </div>
                 </div>
                 <div className="form-group">
                   <label>Confirmar Nueva Contraseña:</label>
-                  <input
-                    type="password"
-                    name="confirmPassword"
-                    value={formData.confirmPassword}
-                    onChange={handleInputChange}
-                  />
+                  <div className="password-input-container">
+                    <input
+                      type={showConfirmPassword ? 'text' : 'password'}
+                      name="confirmPassword"
+                      value={formData.confirmPassword}
+                      onChange={handleInputChange}
+                    />
+                    <span
+                      onClick={() => setShowConfirmPassword(prev => !prev)}
+                      className="eye-icon"
+                    >
+                      <i className={`fas ${showConfirmPassword ? 'fa-eye-slash' : 'fa-eye'}`}></i>
+                    </span>
+                  </div>
                 </div>
                 <div className="action-buttons">
                   <button type="submit" className="btn btn-primary">Guardar Cambios</button>
