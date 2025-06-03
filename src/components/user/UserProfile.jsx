@@ -49,7 +49,7 @@ function UserProfile() {
     setError('');
     setSuccess('');
 
-    if (!formData.currentPassword) {
+    if (!formData.currentPassword ) {
       setError('Debes ingresar la contraseña actual.');
       return;
     }
