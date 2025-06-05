@@ -56,7 +56,7 @@ function AccountInfo() {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`/Users/edit/${userData.userId}`, formData, {
+      await axios.put(`/Users/editAdmin/${userData.userId}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'

@@ -49,7 +49,8 @@ function UserProfile() {
     setError('');
     setSuccess('');
 
-    if (!formData.currentPassword ) {
+    // Validaciones
+    if (!formData.currentPassword) {
       setError('Debes ingresar la contraseña actual.');
       return;
     }
@@ -66,16 +67,19 @@ function UserProfile() {
 
     try {
       const userId = localStorage.getItem('userId');
+      
+      // Construir el payload
       const payload = {
         username: formData.username,
         email: formData.email,
-        passwordHash: formData.newPassword || formData.currentPassword
+        currentPassword: formData.currentPassword,
+        passwordHash: formData.newPassword ? formData.newPassword : undefined, // Enviar solo si se cambia la contraseña
       };
 
       await api.put(`/Users/edit/${userId}`, payload, {
         headers: {
-          'Content-Type': 'application/json'
-        }
+          'Content-Type': 'application/json',
+        },
       });
 
       setSuccess('Perfil actualizado correctamente.');
