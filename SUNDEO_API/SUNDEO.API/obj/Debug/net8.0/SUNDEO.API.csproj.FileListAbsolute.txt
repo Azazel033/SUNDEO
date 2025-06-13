@@ -1,0 +1,870 @@
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.Development.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.staticwebassets.endpoints.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.exe
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.deps.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.runtimeconfig.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.pdb
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Core.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Humanizer.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.ClientModel.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.CodeDom.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Json.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.AssemblyReference.cache
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfoInputs.cache
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfo.cs
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.CoreCompileInputs.cache
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\scopedcss\bundle\SUNDEO.API.styles.css
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.build.SUNDEO.API.props
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SUNDEO.API.props
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SUNDEO.API.props
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.Up2Date
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\refint\SUNDEO.API.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.pdb
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.genruntimeconfig.cache
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\ref\SUNDEO.API.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Programación\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.Development.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.staticwebassets.endpoints.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.exe
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.deps.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.runtimeconfig.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.pdb
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Core.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Identity.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Humanizer.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.ClientModel.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.CodeDom.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Memory.Data.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Json.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.AssemblyReference.cache
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfoInputs.cache
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfo.cs
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.CoreCompileInputs.cache
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cs
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cache
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\scopedcss\bundle\SUNDEO.API.styles.css
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.development.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.build.SUNDEO.API.props
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SUNDEO.API.props
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SUNDEO.API.props
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.pack.json
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.Up2Date
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\refint\SUNDEO.API.dll
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.pdb
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.genruntimeconfig.cache
+D:\00ESCUELA DANIEL\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\ref\SUNDEO.API.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.Development.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.staticwebassets.endpoints.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.exe
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.deps.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.runtimeconfig.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.pdb
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Core.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Identity.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Humanizer.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.ClientModel.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.CodeDom.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Memory.Data.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Json.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.AssemblyReference.cache
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfoInputs.cache
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfo.cs
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.CoreCompileInputs.cache
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cs
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cache
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\scopedcss\bundle\SUNDEO.API.styles.css
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.build.SUNDEO.API.props
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SUNDEO.API.props
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SUNDEO.API.props
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.Up2Date
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\refint\SUNDEO.API.dll
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.pdb
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.genruntimeconfig.cache
+C:\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\ref\SUNDEO.API.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.Development.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\appsettings.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.staticwebassets.endpoints.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.exe
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.deps.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.runtimeconfig.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.pdb
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Core.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Azure.Identity.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Humanizer.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.ClientModel.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.CodeDom.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Formats.Asn1.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.IO.Pipelines.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Text.Json.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.AssemblyReference.cache
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfoInputs.cache
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfo.cs
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.CoreCompileInputs.cache
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cs
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cache
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\scopedcss\bundle\SUNDEO.API.styles.css
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.development.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.build.SUNDEO.API.props
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SUNDEO.API.props
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SUNDEO.API.props
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.pack.json
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.Up2Date
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\refint\SUNDEO.API.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.pdb
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.genruntimeconfig.cache
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\ref\SUNDEO.API.dll
+E:\TFG - SUNDEO\SUNDEO\SUNDEO_TFG\SUNDEO.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\appsettings.Development.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\appsettings.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.staticwebassets.endpoints.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.exe
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.deps.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.runtimeconfig.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\SUNDEO.API.pdb
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Azure.Core.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Azure.Identity.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Humanizer.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.ClientModel.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.CodeDom.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Formats.Asn1.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.IO.Pipelines.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Memory.Data.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Text.Json.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.AssemblyReference.cache
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfoInputs.cache
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.AssemblyInfo.cs
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.CoreCompileInputs.cache
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cs
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.MvcApplicationPartsAssemblyInfo.cache
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\scopedcss\bundle\SUNDEO.API.styles.css
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets.development.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.SUNDEO.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.build.SUNDEO.API.props
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SUNDEO.API.props
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SUNDEO.API.props
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets.pack.json
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.csproj.Up2Date
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\refint\SUNDEO.API.dll
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.pdb
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\SUNDEO.API.genruntimeconfig.cache
+E:\SUNDEO ENTREGA FINAL\SUNDEO_API\SUNDEO.API\obj\Debug\net8.0\ref\SUNDEO.API.dll
